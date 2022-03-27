@@ -1,0 +1,155 @@
+/* CSS for all */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+a{
+    text-decoration: none;
+    /* font-size:16px ; */
+}
+
+html{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ul,li{
+    list-style: none;
+}
+
+
+
+
+
+/* CSS for header */
+#header{
+    width: 100%;
+    height: 295px;
+    background-color: #fe7676;
+    overflow: hidden;
+}
+
+.content-header{
+    text-align: center;
+    height: 265px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content-header h1{
+    font-size: 76px;
+    font-weight: 400;
+}
+
+.content-header a,
+.content-header p{
+    color: white;
+    font-style: italic;
+}
+
+.content-header p{
+    font-size: 14px;
+}
+
+.content-header a{
+    transition: all 0.2 ease-in-out;
+}
+
+.content-header a:hover{
+    color: #eee;
+}
+
+/* CSS for nav */
+
+
+#nav{
+    background: #fff;
+    min-height: 60px;
+}
+
+#menu{
+    line-height:60px;
+}
+
+.menu1{
+    display:flex;
+    justify-content: center;
+}
+
+.menu2{
+    opacity: 0;
+    width: 131px;
+    z-index: 99;
+    background: #fe7676;
+    margin-top:5px;
+    padding:16px 0;
+    transition:all 0.2s ease-in-out;
+    position: relative;
+}
+
+.menu3{
+    opacity: 0;
+    background-color: #fff;
+    position:absolute;
+    right: -131px;
+    top: 60px;
+    width: 131px;
+    box-shadow:0 0 10px rgba(0,0,0,0.3);
+    padding: 18px 0;    
+}
+
+.menu1 a{
+    margin: 0 20px;
+    color:#000;
+    transition: all 0.2s ease-in-out;
+}
+
+.menu1>li>a{
+    text-transform: uppercase;
+}
+
+.menu1>li>a:hover{
+    color:#fe7676;
+}
+
+.menu2>li>a{
+    display: block;
+    color: #fff;
+    font: 12px/14px "Open Sans", Georgia, sans-serif;
+    padding: 3px 0;
+    text-indent: 26px;
+    margin: 0;
+}
+
+.menu2>li>a:hover{
+    background-color: #fff;
+    color: #fe7676;
+}
+
+#menu .menu1 li:hover .menu2{
+    opacity: 1;
+}
+
+.menu3>li>a{
+    display: block;
+    color: #000;
+    font: 12px/14px "Open Sans", Georgia, sans-serif;
+    padding: 3px 0;
+    text-indent: 26px;
+    margin: 0;
+}
+
+.menu3 li a:hover{
+    background-color: #fe7676;
+    color: #fff;
+}
+
+#menu .menu1  .menu2 li:hover .menu3{
+    opacity: 1;
+}
+
+/* 12345 */
