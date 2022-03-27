@@ -21,7 +21,10 @@ ul,li{
     list-style: none;
 }
 
-
+body{
+    overflow-x: hidden;
+    background: #f1f0f0;
+}
 
 
 
@@ -40,7 +43,7 @@ ul,li{
     justify-content: center;
     align-items: center;
 }
-.content-header h1{
+.content-header h1 a{
     font-size: 76px;
     font-weight: 400;
 }
@@ -152,4 +155,199 @@ ul,li{
     opacity: 1;
 }
 
-/* 12345 */
+/* CSS for content */
+#content{
+    background-color: #f1f0f0;
+    top: -96px;
+    position: relative;
+}
+/* CSS for left-row */
+.left-row-content{
+    margin-top: 65px;
+}
+.left-row-content h3{
+    color: #5f5f5f;
+    text-transform: uppercase;
+    font: 24px/30px 'Open Sans', Arial, sans-serif;
+
+}
+.left-row-content .btn-left-content{
+    margin-top:46px;
+}
+.left-row-content .header-left-content{
+    font: 18px/30px 'Open Sans', Arial, sans-serif;
+    color: #6f6f6f;
+    transition: all 0.2s linear;
+}
+
+.left-row-content a:hover{
+    color: #fe7676;
+}
+
+.left-row-content .second-btn{
+    font-size:20px;
+    color: #fe7676; 
+}
+.left-row-content .second-btn:hover{
+    color: #000;
+}
+/* CSS for Blog */
+.blog-page,
+.blog-img{
+    margin-top: 18px;
+    overflow: hidden;
+}
+.blog-img img{
+    width: 100%;
+    height: auto;
+}
+.blog-page p{
+    font: 14px/21px Arial, Helvetica, sans-serif;
+    color: #777675;
+    margin-top:13px;
+    /* font-style: justify; */
+}
+.blog-page-btn{
+    display: inline-block;
+    color: #fff;
+    background: #fe7676;
+    font: 12px/20px "Open Sans", Arial, Helvetica, sans-serif;
+    margin-top: 18px;
+    text-transform: uppercase;
+    padding: 7px 24px 5px;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+
+}
+.blog-page-btn:hover{
+    color: #fe7676;
+    background-color: #000;
+}
+/* CSS for right-row */
+.right-row-content{
+    margin-top: 65px;
+}
+.right-row-content h3{
+    font: 24px/30px 'Open Sans', Arial, sans-serif;
+    color: #5f5f5f;
+    text-transform: uppercase;
+}
+.list-categories {
+    margin-top: 48px;
+    font: 12px/18px Arial, Helvetica, sans-serif;
+}
+.list-categories li{
+    /* display: block; */
+    padding-left: 17px;
+    margin-bottom: 12px;
+    background: url(../img/list_marker.png) 1px 5px no-repeat;
+}
+.list-categories li a{
+    /* display: inline-block;  */
+    color: #777675;
+    font: 12px/16px Arial, sans-serif;
+    transition: all 0.3s ease;
+}
+.list-categories li a:hover{
+    color: #dd745c;
+}
+/* CSS for search blog */
+.search-blog{
+    margin-top: 51px;
+}
+.input-search input{
+    width: 100%;
+    /* float: left; */
+    color: #b3b1af;
+    font: 13px/20px Arial, Helvetica, sans-serif;
+    height: 32px;
+    border: 1px solid #d9d9d9;
+    padding: 5px 5px 5px 14px;
+
+}
+/* CSS for Recent-posts */
+.recent-posts{
+    margin-top: 65px;
+}
+.card-recent-posts{
+    margin-top:38px;
+    /* display:flex;
+    overflow: hidden; */
+}
+.card-recent-posts img{
+    width: 100%;
+    height: auto;
+}
+.card-recent-posts a{
+    color: #6f6f6f; 
+    font: 20px/21px Arial, Helvetica, sans-serif;
+}
+.card-recent-posts p{
+    font: 16px/21px Arial, Helvetica, sans-serif;
+    color: #777675;
+}
+.btn-recent-posts {
+    margin: 4px 0;
+}
+.card-recent-posts a:hover{
+    color: #fe7676;
+}
+/* CSS for footer */
+#footer{
+    background-color: #fe7676;
+
+}
+.header-text-footer{
+    padding-top: 44px;
+
+}
+.body-text-footer {
+    text-align: center;
+}
+.header-text-footer p{
+    text-align: center;
+    font: 24px/24px "Open Sans", Arial, sans-serif;
+    color: #fff;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+.body-text-footer p{
+    font: 18px/30px "Open Sans", Arial, sans-serif;
+    color: #fff;
+    margin-top: 24px;
+}
+.item-footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-bottom: 44px;
+}
+.item-footer a i{
+    color: #fff;
+    font-size: 40px;
+    margin:0 20px;
+    transition: all 0.2s ease-in-out;
+}
+.item-footer a:hover i{
+    color: #482222;
+}
+/* CSS for footer-desc */
+
+.text-desc {
+    text-align: center;
+    padding: 11px 0 10px;
+}
+
+.text-desc a,
+.text-desc p{
+    font: 13px/20px "Open Sans", Arial, sans-serif;
+    color: #171717;
+    margin-top: 2px;
+}
+
+.text-desc a{
+    transition: all 0.2s ease-in-out;
+}
+
+.text-desc:hover a{
+    color: #fe7676;
+}
