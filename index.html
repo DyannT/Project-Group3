@@ -12,92 +12,354 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body>
-    <!-- Start header -->
-    <div id="header">
-        <div class="grid wide content-header">
-            <div class="row">
-                <div class="col l-12 m-12 c-12">
-                    <div class="desc-header">
-                        <h1><a href="index.html">“Alice comes back home”</a></h1>
-                        <p>AUTHOR: TOM CURSON</p>
-                    </div>
-                </div>
+<!-- Start-Loading -->
+<!-- <div id="preloader" class="loading">
+    <div class="loader">
+        <div class="loader-inner">
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
+            </div>
+            <div class="loader-line-wrap">
+                <div class="loader-line"></div>
             </div>
         </div>
     </div>
-    <!-- End header -->
+</div>
+<script src='./assets/js/script-loading.js'></script> -->
+<!-- End-loading -->
 
-     <!-- Start-nav -->
-     <div id="nav">
-        <div class="grid wide">
-            <!-- Start-Menu -->
-            <div class="row">
-                <div class="col l-12 m-12">
-                    <div id="menu">
-                        <ul class="menu1">
-                            <li style="width: 131px;"><a style="display: flex;align-items: center;"
-                                    href="index.html">Home
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
-                                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round"
-                                        class="feather feather-arrow-down">
-                                        <line x1="12" y1="5" x2="12" y2="19"></line>
-                                        <polyline points="19 12 12 19 5 12"></polyline>
-                                    </svg>
-                                </a>
-                                <ul class="menu2">
-                                    <li><a href="about.html">About</a></li>
-                                    <li><a href="history.html">History</a></li>
-                                    <li><a style="display: flex;align-items: center;" href="#">News
+<body>
+    <div id="main">
+            <!-- Start header -->
+            <div id="header">
+                <div class="grid wide content-header">
+                    <div class="row">
+                        <div class="col l-12 m-12 c-12">
+                            <div class="desc-header">
+                                <h1><a href="index.html">“Alice comes back home”</a></h1>
+                                <p>AUTHOR: TOM CURSON</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End header -->
+
+            <!-- Start-nav -->
+            <div id="nav">
+                <div class="grid wide">
+                    <!-- Start-Menu -->
+                    <div class="row">
+                        <div class="col l-12 m-12">
+                            <div id="menu">
+                                <ul class="menu1">
+                                    <li style="width: 131px;"><a style="display: flex;align-items: center;"
+                                            href="index.html">Home
                                             <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                class="feather feather-arrow-right">
-                                                <line x1="5" y1="12" x2="19" y2="12"></line>
-                                                <polyline points="12 5 19 12 12 19"></polyline>
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-arrow-down">
+                                                <line x1="12" y1="5" x2="12" y2="19"></line>
+                                                <polyline points="19 12 12 19 5 12"></polyline>
                                             </svg>
                                         </a>
-                                        <ul class="menu3">
-                                            <li><a href="#">Fresh</a></li>
-                                            <li><a href="#">Archive</a></li>
+                                        <ul class="menu2">
+                                            <li><a href="about.html">About</a></li>
+                                            <li><a href="history.html">History</a></li>
+                                            <li><a style="display: flex;align-items: center;" href="#">News
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                        class="feather feather-arrow-right">
+                                                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                                                        <polyline points="12 5 19 12 12 19"></polyline>
+                                                    </svg>
+                                                </a>
+                                                <ul class="menu3">
+                                                    <li><a href="#">Fresh</a></li>
+                                                    <li><a href="#">Archive</a></li>
+                                                </ul>
+                                            </li>
                                         </ul>
                                     </li>
+                                    <li style="width: 131px;"><a href="about.html">About</a></li>
+                                    <li style="width: 131px;"><a href="blog.html">Blog</a></li>
+                                    <li style="width: 131px;"><a href="portfolio.html">Portfolio</a></li>
+                                    <li style="width: 131px;"><a href="history.html">History</a></li>
+                                    <li style="width: 131px;"><a href="contacts.html">Contact</a></li>
+                                    <li style="width: 131px;"><a href="login.html">Login</a></li>
                                 </ul>
-                            </li>
-                            <li style="width: 131px;"><a href="about.html">About</a></li>
-                            <li style="width: 131px;"><a href="blog.html">Blog</a></li>
-                            <li style="width: 131px;"><a href="portfolio.html">Portfolio</a></li>
-                            <li style="width: 131px;"><a href="history.html">History</a></li>
-                            <li style="width: 131px;"><a href="contacts.html">Contact</a></li>
-                            <li style="width: 131px;"><a href="login.html">Login</a></li>
-                        </ul>
-                        <div class="clear"></div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <!-- End-Menu -->
+                    <!-- End-Menu -->
 
-            <!-- Start-Taskbar-responsive -->
-            <div class="row">
-                <div class="col l-0 m-0 c-12">
-                    <div class="btn-taskbar-mobile">
-                        <svg id="mobile-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                            stroke-linecap="round" stroke-linejoin="round" class="feather feather-list">
-                            <line x1="8" y1="6" x2="21" y2="6"></line>
-                            <line x1="8" y1="12" x2="21" y2="12"></line>
-                            <line x1="8" y1="18" x2="21" y2="18"></line>
-                            <line x1="3" y1="6" x2="3.01" y2="6"></line>
-                            <line x1="3" y1="12" x2="3.01" y2="12"></line>
-                            <line x1="3" y1="18" x2="3.01" y2="18"></line>
-                        </svg>
+                    <!-- Start-Taskbar-responsive -->
+                    <div class="row">
+                        <div class="col l-0 m-0 c-12">
+                            <div class="btn-taskbar-mobile">
+                                <svg id="mobile-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="feather feather-list">
+                                    <line x1="8" y1="6" x2="21" y2="6"></line>
+                                    <line x1="8" y1="12" x2="21" y2="12"></line>
+                                    <line x1="8" y1="18" x2="21" y2="18"></line>
+                                    <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                                    <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                                    <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End-Taskbar-responsive -->
+                </div>
+            </div>
+            <!-- End-nav -->
+
+        <main>
+            <!-- Start-Slider -->
+            <section class="home-intro">
+                <div class="grid background-silder">
+                    <div class="grid wide">
+                        <div class="row slier-item">
+                            <div class="col l-5 m-6 c-12">
+                                <div class="card-img container">
+                                    <div class="image">
+                                        <img src="./assets/img/book_pic.png" alt="/">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-7 m-6 c-0">
+                                <p class="txt2" id="header_txt">“A fabulous story of a little<br>girl Alice who came<br>back
+                                    home.”</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- End-Slider -->
+
+
+            <!-- Start-content -->
+            <div id="content">
+                <div class="grid">
+                    <div class="grid wide">
+                        <!-- Start-first-content -->
+                        <div class="row">
+                            <div class="col l-12 m-12 c-12">
+                                <div class="first-content fade-in">
+                                    <h2>Welcome!</h2>
+                                    <p>Ut telloribus eget elemetum vel curleif end elit. Aean auctoetnaliir pis
+                                        nteerutruNulla fn nec ero ante ipsummis fauulet utrice posere cubtsed leo
+                                        pharetu
+                                        nec augue. Naelit magnrerit siaiverra sed nullanec portadiam eu massanecllus non
+                                        era
+                                        acinia fermentum. Donec in velit vel ipsum auctorulvinarroin ullamc.</p>
+                                    <a class="content-btn" href="#">READ MORE</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End-first-content -->
+
+                        <!-- Start-second-content -->
+                        <div class="row">
+                            <div class="col l-4 m-4 c-12">
+                                <div class="card-content slide-in from-left">
+                                    <img src="./assets/img/pic_card.png" alt="">
+                                    <h4>idea of ​​the book</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adiing elit. In volutpat luctus eros ac
+                                        placerat. Quisque erat metus facilisis non feu aliquam hendrerit quam.</p>
+                                    <a class="btn-card-content" href="">More</a>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-4 c-12">
+                                <div class="card-content fade-in">
+                                    <img src="./assets/img/pic_book.png" alt="">
+                                    <h4>structure of the book</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adiing elit. In volutpat luctus eros ac
+                                        placerat. Quisque erat metus facilisis non feu aliquam hendrerit quam.</p>
+                                    <a class="btn-card-content" href="">More</a>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-4 c-12">
+                                <div class="card-content slide-in from-right">
+                                    <img src="./assets/img/pic_balloons.png" alt="">
+                                    <h4>theme of the book</h4>
+                                    <p>Lorem ipsum dolor sit amet consectetur adiing elit. In volutpat luctus eros ac
+                                        placerat. Quisque erat metus facilisis non feu aliquam hendrerit quam.</p>
+                                    <a class="btn-card-content" href="">More</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End-second-content -->
+
+                        <!-- Start-3th-content -->
+                        <div class="row">
+                            <div class="col l-12 m-12 c-12">
+                                <div class="author-say fade-in">
+                                    <h3>AUTHOR SAYS:</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col l-3 m-6 c-12 slide-in from-left">
+                                <div class="desc-content">
+                                    <div class="container">
+                                        <div class="image image-author">
+                                            <img src="./assets/img/pic_author.jpg" alt="">
+                                            <div class="div-info-author" >
+                                                <ul class="info-author">
+                                                    <li>Name:Tom Curson</li>
+                                                    <li>Phone:+123 456 789</li>
+                                                    <li>Email:tom@tomcurson.com</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-9 m-6 c-12 slide-in from-right">
+                                <div class="desc-content">
+                                    <p>“Ut telloribus eget elemetum vel curleif end elit. Aean auctoetnaliir pis rutru
+                                        allterise Nulla fn nec ero ante ipsummisutrice posere cubtsed laretu nec augue
+                                        them
+                                        tooll. Laelit magnrerit siaivtra sed nullanec portadiam massanyecllus non era
+                                        acinia
+                                        Praesent pharetra justo justo, quis accumsan purus tools tore protections
+                                        fermentum.
+                                        Donec in velit vel ipsum ctorulvinarroin ullamc.”</p>
+                                </div>
+                                <div class="signature">
+                                    <div class="col l-3 m-7 c-7">
+                                        <p>Tom Curson</p>
+                                    </div>
+
+                                    <div class="col l-9 m-5 c-5">
+                                        <img src="./assets/img/pic_signature.png" alt="/">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- End-3th-content -->
+
+                        <!-- Start-4th-content -->
+                        <div class="row">
+                            <div class="col l-12 m-12 c-12">
+                                <div class="desc-pic fade-in">
+                                    <h3>PICTURES OF THE BOOK</h3>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col l-4 m-4 c-12">
+                                <div class="desc-pic-img slide-in from-left">
+                                    <div class="container container-tb">
+                                        <div class="image image-tb">
+                                            <img src="./assets/img/page1_pic2.jpg" alt="/">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-4 c-12">
+                                <div class="desc-pic-img fade-in">
+                                    <div class="container">
+                                        <div class="image image-tb">
+                                            <img src="./assets/img/page1_pic3.jpg" alt="/">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-4 m-4 c-12">
+                                <div class="desc-pic-img slide-in from-right">
+                                    <div class="container">
+                                        <div class="image image-tb">
+                                            <img src="./assets/img/page1_pic4.jpg" alt="/">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="more-4th-content">
+                            <a class="btn-4th-content" href="#">View More</a>
+                        </div>
+                        <!-- End-4th-content -->
                     </div>
                 </div>
             </div>
-            <!-- End-Taskbar-responsive -->
-        </div>
+            <!-- End-content -->
+            <!-- Start-footer -->
+            <div id="footer">
+                <div class="grid">
+                    <div class="grid wide">
+                        <div class="row">
+                            <div class="col l-12 m-12 c-12">
+                                <div class="header-text-footer">
+                                    <p>GET IN TOUCH</p>
+                                </div>
+
+                                <div class="body-text-footer">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maurissemper eu turpis
+                                        sed,
+                                        mollis vehicula neque.
+                                        Ut in urna ante. Etiam sit amet arcu ante.</p>
+                                </div>
+
+                                <div class="item-footer">
+                                    <a href="#">
+                                        <i class="ti-twitter-alt"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="ti-facebook"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="ti-pinterest-alt"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="ti-google"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="ti-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End-footer -->
+
+            <!-- Start-footer-desc -->
+            <div class="footer-desc">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-12 m-12 c-12">
+                            <div class="text-desc">
+                                <p>Alice comes back home © 2022 |
+                                    <span><a href="#"> Privacy Policy</a></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End-footer-desc -->
+        </main>
     </div>
-    <!-- End-nav -->
-<body>
+    <script src="./assets/js/scripts.js"></script>
+    <script src="./assets/js/observers.js"></script>
+</body>
+
 </html>
