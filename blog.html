@@ -31,14 +31,15 @@
 
         <!-- Start Nav -->
         <div id="nav">
-            <div class="gird wide">
+            <div class="grid wide">
                 <!-- Start Menu -->
                 <div class="row">
                     <div class="col l-12 m-12">
                         <div id="menu">
                             <ul class="menu1">
                                 <li style="width: 131px;">
-                                    <a style="display: flex;align-items: center;" href="index.html">Home
+                                   <a style="display: flex;align-items: center;"
+                                        href="index.html">Home
                                         <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
                                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                             stroke-linecap="round" stroke-linejoin="round"
@@ -63,7 +64,6 @@
                                                 <li><a href="#">Fresh</a></li>
                                                 <li><a href="#">Archive</a></li>
                                             </ul>
-
                                         </li>
                                     </ul>
                                 </li>
@@ -74,10 +74,30 @@
                                 <li style="width: 131px;"><a href="contacts.html">Contact</a></li>
                                 <li style="width: 131px;"><a href="login.html">Login</a></li>
                             </ul>
+
                         </div>
                     </div>
                 </div>
                 <!-- End menu -->
+
+                 <!-- Start-Taskbar-responsive -->
+                 <div class="row">
+                    <div class="col l-0 m-0 c-12">
+                        <div class="btn-taskbar-mobile">
+                            <svg id="mobile-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" class="feather feather-list">
+                                <line x1="8" y1="6" x2="21" y2="6"></line>
+                                <line x1="8" y1="12" x2="21" y2="12"></line>
+                                <line x1="8" y1="18" x2="21" y2="18"></line>
+                                <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                                <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                                <line x1="3" y1="18" x2="3.01" y2="18"></line>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <!-- End-Taskbar-responsive -->
 
 
             </div>
@@ -92,14 +112,13 @@
                         <div class="col l-7 m-7 c-12">
                             <!-- Left content -->
                             <div class="left-row-content">
-                                <div class="">
+                                <div class="fade-in">
                                     <h3>Blog</h3>
                                 </div>
 
                                 <div class="btn-left-content">
-                                    <div class="">
-                                        <a href="" class="header-left-content">Duis tempus nisl vitae sapien fermentum,
-                                            quis blandit.</a>
+                                    <div class="fade-in">
+                                        <a href="" class="header-left-content">Duis tempus nisl vitae sapien fermentum, quis blandit.</a>
                                         <div class="row">
                                             <div class="col l-2-4 m-2-4 c-6">
                                                 <a class="second-btn" href="">14 July 2014</a>
@@ -120,7 +139,7 @@
                                     </div>
 
                                     <div class="row">
-                                        <div class="col l-4 m-12 c-12">
+                                        <div class="col l-4 m-12 c-12 slide-in from-left">
                                             <div class="blog-img">
                                                 <div class="container">
                                                     <div class="image">
@@ -130,7 +149,7 @@
                                             </div>
                                         </div>
 
-                                        <div class="col l-8 m-12 c-12">
+                                        <div class="col l-8 m-12 c-12 slide-in from-right">
                                             <div class="blog-page">
                                                 <p>
                                                     Etiam vulputate a eros id porta. Donec eu tristique nunc. Quisque
@@ -146,14 +165,14 @@
                                                     taciti
                                                     sociosqu.
                                                 </p>
-                                                <a href="" class="blog-page-btn">More</a>
+                                               <div class="blog-page-btn-cover"><a href="" class="blog-page-btn">More</a></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="btn-left-content">
-                                    <div class="">
+                                    <div class="fade-in">
                                         <a href="" class="header-left-content">Fusce turpis lacus, vestibulum sit amet
                                             condime.</a>
                                         <div class="row" >
@@ -177,7 +196,7 @@
 
                                     <div class="row">
                                         <div class="col l-4 m-12 c-12">
-                                            <div class="blog-img">
+                                            <div class="blog-img slide-in from-left">
                                                 <div class="container">
                                                     <div class="image">
                                                         <img src="./assets/img/img-blog1.jpg" alt="">
@@ -187,7 +206,7 @@
                                         </div>
 
                                         <div class="col l-8 m-12 c-12">
-                                            <div class="blog-page">
+                                            <div class="blog-page slide-in from-right">
                                                 <p>
                                                     Etiam vulputate a eros id porta. Donec eu tristique nunc. Quisque
                                                     porta
@@ -202,14 +221,14 @@
                                                     taciti
                                                     sociosqu.
                                                 </p>
-                                                <a href="" class="blog-page-btn">More</a>
+                                               <div class="blog-page-btn-cover"><a href="" class="blog-page-btn">More</a></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
                                 <div class="btn-left-content">
-                                    <div class="">
+                                    <div class="fade-in">
                                         <a href="" class="header-left-content">Cras facilisis ultrices euismod. Pellente
                                             massa et.</a>
                                         <div class="row">
@@ -233,7 +252,7 @@
 
                                     <div class="row">
                                         <div class="col l-4 m-12 c-12">
-                                            <div class="blog-img">
+                                            <div class="blog-img slide-in from-left">
                                                 <div class="container">
                                                     <div class="image">
                                                         <img src="./assets/img/img-blog2.jpg" alt="">
@@ -243,7 +262,7 @@
                                         </div>
 
                                         <div class="col l-8 m-12 c-12">
-                                            <div class="blog-page">
+                                            <div class="blog-page slide-in from-right">
                                                 <p>
                                                     Etiam vulputate a eros id porta. Donec eu tristique nunc. Quisque
                                                     porta
@@ -258,7 +277,7 @@
                                                     taciti
                                                     sociosqu.
                                                 </p>
-                                                <a href="" class="blog-page-btn">More</a>
+                                               <div class="blog-page-btn-cover"><a href="" class="blog-page-btn">More</a></div>
                                             </div>
                                         </div>
                                     </div>
@@ -272,12 +291,12 @@
                         <!-- Right content -->
                         <div class="col l-5 m-5 c-12">
                             <div class="right-row-content">
-                                <div class="">
+                                <div class="fade-in">
                                     <h3>CATEGORIES</h3>
                                 </div>
 
                                 <div>
-                                    <ul class="list-categories">
+                                    <ul class="list-categories slide-in from-right">
                                         <li><a href="#">Lorem ipsum dolor sit amet</a></li>
                                         <li><a href="#">Consectetuer adipisc</a></li>
                                         <li><a href="#">Praesent vestibulum molestie</a></li>
@@ -288,28 +307,28 @@
                                     </ul>
                                 </div>
                                 <div class="search-blog">
-                                    <div class="">
+                                    <div class="fade-in">
                                         <h3>SEARCH</h3>
                                     </div>
-                                    <div class="input-search">
+                                    <div class="input-search slide-in from-right">
                                         <input type="text" required placeholder="Enter keyword:">
                                         <a href="" class="more-btn2"></a>
                                     </div>
                                 </div>
                                 <div class="recent-posts">
-                                    <div>
+                                    <div class="fade-in">
                                         <h3>RECENT POSTS</h3>
                                     </div>
                                     <div class="card-recent-posts">
                                         <div class="row">
-                                            <div class="col l-4 m-12 c-12">
+                                            <div class="col l-4 m-12 c-12 slide-in from-left">
                                                 <div class="container">
-                                                    <div class="img">
+                                                    <div class="image">
                                                         <img src="./assets/img/recent-posts-1.jpg" alt="">
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col l-8 m-12 c-12">
+                                            <div class="col l-8 m-12 c-12 slide-in from-right">
                                                 <div class="btn-recent-posts">
                                                     <a href="">Ehiugue massa</a>
                                                 </div>
@@ -322,14 +341,14 @@
 
                                     <div class="card-recent-posts">
                                         <div class="row">
-                                            <div class="col l-4 m-12 c-12">
+                                            <div class="col l-4 m-12 c-12 slide-in from-left">
                                                 <div class="container">
-                                                    <div class="img">
+                                                    <div class="image">
                                                         <img src="./assets/img/recent-posts-2.jpg" alt="">
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col l-8 m-12 c-12">
+                                            <div class="col l-8 m-12 c-12 slide-in from-right">
                                                 <div class="btn-recent-posts">
                                                     <a href="">Nec congmris.</a>
                                                 </div>
@@ -342,14 +361,14 @@
 
                                     <div class="card-recent-posts">
                                         <div class="row">
-                                            <div class="col l-4 m-12 c-12">
+                                            <div class="col l-4 m-12 c-12 slide-in from-left">
                                                 <div class="container">
-                                                    <div class="img">
+                                                    <div class="image">
                                                         <img src="./assets/img/recent-posts-3.jpg" alt="">
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col l-8 m-12 c-12">
+                                            <div class="col l-8 m-12 c-12 slide-in from-right">
                                                 <div class="btn-recent-posts">
                                                     <a href="">Nunc convallis.</a>
                                                 </div>
@@ -433,5 +452,7 @@
     </div>
         </main>
     </div>
+    <script src="./assets/js/observers.js"></script>
+
 </body>
 </html>

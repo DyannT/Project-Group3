@@ -5,12 +5,9 @@
     box-sizing: border-box;
 }
 
-
-
-
 a{
     text-decoration: none;
-    /* font-size:16px ; */
+    font-size:16px ;
 }
 
 html{
@@ -26,7 +23,86 @@ body{
     background: #f1f0f0;
 }
 
+.image{
+    width: 100%;
+    height: 100%;
+    transition: 0.7s;
+}
+.image:hover{
+    transform: scale(1.2);
+}
 
+
+:-moz-selection { /* Code for Firefox */
+    color: #fe7676;
+    background: #ddd;
+}
+  
+::selection {
+    color: #fe7676;
+    background: #ddd;
+}
+
+/* width */
+::-webkit-scrollbar{
+    width: 9px;
+    background: #fe7676;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    border-radius: 90px;
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #fff; 
+}  
+
+.fade-in {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+  }
+  
+.fade-in.appear {
+    opacity: 1;
+}
+
+.nav-scrolled {
+    --text: #333;
+    --text-inverse: #f4f4f4;
+    --background: #f4f4f4;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .from-right {
+    grid-column: 3 / 4;
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+  }
+  
+  .from-left,
+  .from-right {
+    transition: opacity 250ms ease-in, -webkit-transform 400ms ease-in;
+    transition: opacity 250ms ease-in, transform 400ms ease-in;
+    transition: opacity 250ms ease-in, transform 400ms ease-in,
+      -webkit-transform 400ms ease-in;
+    opacity: 0;
+  }
+  
+  .from-left.appear,
+  .from-right.appear {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .from-left {
+    grid-column: 2 / 3;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
 
 /* CSS for header */
 #header{
@@ -191,6 +267,8 @@ body{
 .left-row-content .second-btn:hover{
     color: #000;
 }
+
+
 /* CSS for Blog */
 .blog-page,
 .blog-img{
@@ -205,7 +283,7 @@ body{
     font: 14px/21px Arial, Helvetica, sans-serif;
     color: #777675;
     margin-top:13px;
-    /* font-style: justify; */
+    font-style: justify;
 }
 .blog-page-btn{
     display: inline-block;
@@ -251,13 +329,19 @@ body{
 .list-categories li a:hover{
     color: #dd745c;
 }
+
+
+
 /* CSS for search blog */
 .search-blog{
     margin-top: 51px;
 }
+.input-search{
+    margin-top: 30px;
+}
 .input-search input{
     width: 100%;
-    /* float: left; */
+    float: left;
     color: #b3b1af;
     font: 13px/20px Arial, Helvetica, sans-serif;
     height: 32px;
@@ -265,14 +349,32 @@ body{
     padding: 5px 5px 5px 14px;
 
 }
+
+.input-search a{
+    background: url(../img/zoom_icon.png) top no-repeat;
+    position: relative;
+    display: inline-block;
+    width: 24px;
+    height: 20px;
+    margin-left: -35px;
+    margin-top: 7px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.more-btn2:hover {
+    background: url(../img/zoom_icon.png) bottom no-repeat;
+}
+
+
 /* CSS for Recent-posts */
 .recent-posts{
     margin-top: 65px;
 }
 .card-recent-posts{
     margin-top:38px;
-    /* display:flex;
-    overflow: hidden; */
+    display:flex;
+    overflow: hidden;
 }
 .card-recent-posts img{
     width: 100%;
@@ -350,4 +452,105 @@ body{
 
 .text-desc:hover a{
     color: #fe7676;
+}
+/* Responsive */
+/* Repon for table */
+/* Repon for table */
+@media (min-width:740px) and (max-width:1023px){
+}
+
+/* Repon for mobile */
+@media (max-width:739px){
+        /* CSS for main overflow */
+        #main{
+            overflow-x: hidden;
+        }
+    /* CSS for Header */
+    .content-header h1 a{
+        font-size:59px;
+    }
+
+    /* CSS for menu */
+    .menu1{
+        display: inline-block!important;
+        position: relative;
+    }
+    #menu{
+        background-color: #fff;
+        width: 340px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        display: none;
+        transition: all 0.2s linear;
+    }
+    #menu .menu1 .menu2{
+        position: absolute;
+        right: -77px;
+        top: -5px;
+    }
+
+    #menu .menu1 .menu2 .menu3{
+        position: absolute;
+        right:-131px;
+        top:60px;
+    }
+    .menu3,
+    .menu2{
+        opacity: 1;
+    }
+
+    /* CSS for btn */
+    .btn-taskbar-mobile{
+        top: 306px;
+        right: 0;
+        position: absolute;
+        display: inline-block;
+    }
+
+    /* CSS for slider */
+    /* .background-silder {
+        top: 0;
+    } */
+
+    /* CSS for content */
+    #content {
+        top: 0!important;
+        padding-bottom: 65px;
+    }
+    .first-content{
+        margin-top:60px;
+    }
+    .desc-content img{
+        text-align: center;
+        width: 100%;
+        height: auto;
+    }
+    .desc-content p{
+        margin-top:60px;
+    }
+
+    .blog-page-btn-cover{
+        text-align: center;
+    }
+    
+    .blog-page-btn-cover .blog-page-btn{
+        width: 30%;
+    }
+    .left-row-content,
+    .right-row-content{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .card-recent-posts img{
+        width: 100vw;
+    }
+
+    /* CSS for footer-item */
+    .item-footer{
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .item-footer a i{
+        font-size:25px;
+    }
 }
