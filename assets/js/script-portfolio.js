@@ -38,7 +38,6 @@ imgClose.onclick = function () {
 
 
 function sliderImg(i) {
-    do {
         imgLeft.onclick = function () {
             if (i === 2) {
                 --i;
@@ -70,6 +69,5 @@ function sliderImg(i) {
         }
         }
         // console.log(i)
-    } while (i < 0)
-}
+    }
 
