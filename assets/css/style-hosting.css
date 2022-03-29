@@ -133,6 +133,7 @@ html{
     background:white;
     display:none;  
     z-index: 1000;
+    height:1030px;
 }
 
 .img-admin{
@@ -342,8 +343,7 @@ button.btn-change {
     }
     #slidebar{
         width: 220px;
-        /* left: 8px; */
-        padding-bottom: 52px;
+        height: 1123px;
     }
     #content{
         overflow: hidden;   
@@ -367,8 +367,8 @@ button.btn-change {
 
 @media (max-width:739px){
     #slidebar{
-        width: 300px;
-        padding-bottom: 21px;
+        width: 220px;
+        height: 1056px;
     }   
     .div-info li{
         margin-bottom:10px;
