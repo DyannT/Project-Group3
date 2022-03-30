@@ -23,14 +23,6 @@ body{
     background: #f1f0f0;
 }
 
-.image{
-    width: 100%;
-    height: 100%;
-    transition: 0.7s;
-}
-.image:hover{
-    transform: scale(1.2);
-}
 
 
 :-moz-selection { /* Code for Firefox */
@@ -454,9 +446,17 @@ body{
     color: #fe7676;
 }
 /* Responsive */
-/* Repon for table */
+
 /* Repon for table */
 @media (min-width:740px) and (max-width:1023px){
+    .image{
+        width: 100%;
+        height: 100%;
+        transition: 0.7s;
+    }
+    .image:hover{
+        transform: scale(1.2);
+    }
 }
 
 /* Repon for mobile */
@@ -528,13 +528,6 @@ body{
         margin-top:60px;
     }
 
-    .blog-page-btn-cover{
-        text-align: center;
-    }
-    
-    .blog-page-btn-cover .blog-page-btn{
-        width: 30%;
-    }
     .left-row-content,
     .right-row-content{
         margin-left: 10px;
