@@ -251,6 +251,7 @@ body{
     font: 24px/30px 'Open Sans', Arial, sans-serif;
     color: #5f5f5f;
     text-transform: uppercase;
+    margin-bottom:42px;
 }
 .card-history {
     display:flex;
@@ -309,7 +310,7 @@ body{
 }
 .header-list img{
     width: 100%;
-    margin-top:42px;
+    /* margin-top:42px; */
 }
 .header-list p{
     margin-top:42px;

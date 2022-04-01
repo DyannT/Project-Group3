@@ -211,11 +211,21 @@ const btnChange76 = document.querySelector('.btn-change76');
 
 
 // Delete
+// ALL
 const btnDel1 = document.querySelector('.btn-del1')
+const btnDel2 = document.querySelector('.btn-del2');
+// const btnDel3 = document.querySelector('.btn-change3');
+// const btnDel4 = document.querySelector('.btn-change4');
+
 
 console.log(btnDel1)
 
 btnDel1.onclick = function deleteName() {
+	localStorage.removeItem("headerIndex");
+}
+console.log(btnDel2)
+
+btnDel2.onclick = function deleteName() {
 	localStorage.removeItem("headerIndex");
 }
 
