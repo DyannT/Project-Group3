@@ -5,3 +5,4 @@ localStorage.getItem("headerIndex1") && $(".title-header-author").html(`${localS
 localStorage.getItem("footerIndex") && $(".title-footer").html(`${localStorage.getItem("footerIndex")}`)
 
 localStorage.getItem("footerIndex1") && $(".title-footer-desc").html(`${localStorage.getItem("footerIndex1")}`)
+

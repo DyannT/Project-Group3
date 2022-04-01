@@ -226,7 +226,7 @@ btnDel1.onclick = function deleteName() {
 console.log(btnDel2)
 
 btnDel2.onclick = function deleteName() {
-	localStorage.removeItem("headerIndex");
+	localStorage.removeItem("headerIndex1");
 }
 
 

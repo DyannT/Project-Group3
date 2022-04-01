@@ -16,10 +16,10 @@ const data = [
 
 // const data1=[]
 
-function createData(username, password) {
-  this.username = username;
-  this.password = password;
-}
+// function createData(username, password) {
+//   this.username = username;
+//   this.password = password;
+// }
 
 // Text
 const loginText = document.querySelector('.login-text')
@@ -49,9 +49,9 @@ const loading = document.querySelector('.loading')
 // console.log(modal)
 // console.log(loGin)
 // console.log(closebtn)
-console.log(userName)
-console.log(passWord)
-console.log(loginAdmin)
+// console.log(userName)
+// console.log(passWord)
+// console.log(loginAdmin)
 // console.log(formLogin.action)
 // console.log(backbtn)
 // console.log(creaTe)
@@ -152,7 +152,7 @@ function checkLogin(username,password) {
           }
       }
   }
-  return false
+  return false;
 }
 
 function check(e) {
