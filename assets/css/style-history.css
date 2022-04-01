@@ -231,6 +231,13 @@ body{
     opacity: 1;
 }
 
+/* CSS for btn nav */
+.btn-taskbar-mobile{
+    color: #fe7676;
+    padding:5px;
+    background-color: #ccc;
+}
+
 /* CSS for content */
 #content{
     padding-top: 65px;
