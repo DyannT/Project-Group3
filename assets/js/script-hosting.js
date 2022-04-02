@@ -210,24 +210,361 @@ const btnChange75 = document.querySelector('.btn-change75');
 const btnChange76 = document.querySelector('.btn-change76');
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Delete
 // ALL
 const btnDel1 = document.querySelector('.btn-del1')
 const btnDel2 = document.querySelector('.btn-del2');
-// const btnDel3 = document.querySelector('.btn-change3');
-// const btnDel4 = document.querySelector('.btn-change4');
+const btnDel3 = document.querySelector('.btn-del3');
+const btnDel4 = document.querySelector('.btn-del4');
+// Index
+const btnDel5 = document.querySelector('.btn-del5');
+const btnDel6 = document.querySelector('.btn-del6');
+const btnDel7 = document.querySelector('.btn-del7');
+const btnDel8 = document.querySelector('.btn-del8');
+const btnDel9 = document.querySelector('.btn-del9');
+const btnDel10 = document.querySelector('.btn-del10');
+const btnDel11 = document.querySelector('.btn-del11');
+const btnDel12 = document.querySelector('.btn-del12');
+const btnDel13 = document.querySelector('.btn-del13');
+const btnDel14 = document.querySelector('.btn-del14');
+// About
+const btnDel15 = document.querySelector('.btn-del15');
+const btnDel16 = document.querySelector('.btn-del16');
+const btnDel17 = document.querySelector('.btn-del17');
+const btnDel18 = document.querySelector('.btn-del18');
+const btnDel19 = document.querySelector('.btn-del19');
+const btnDel20 = document.querySelector('.btn-del20');
+const btnDel21 = document.querySelector('.btn-del21');
+const btnDel22 = document.querySelector('.btn-del22');
+const btnDel23 = document.querySelector('.btn-del23');
+const btnDel24 = document.querySelector('.btn-del24');
+const btnDel25 = document.querySelector('.btn-del25');
+const btnDel26 = document.querySelector('.btn-del26');
+const btnDel27= document.querySelector('.btn-del27');
+const btnDel28 = document.querySelector('.btn-del28');
+// Blog
+const btnDel29 = document.querySelector('.btn-del29');
+const btnDel30 = document.querySelector('.btn-del30');
+const btnDel31 = document.querySelector('.btn-del31');
+const btnDel32 = document.querySelector('.btn-del32');
+const btnDel33 = document.querySelector('.btn-del33');
+const btnDel34 = document.querySelector('.btn-del34');
+const btnDel35 = document.querySelector('.btn-del35');
+const btnDel36 = document.querySelector('.btn-del36');
+const btnDel37 = document.querySelector('.btn-del37');
+const btnDel38 = document.querySelector('.btn-del38');
+const btnDel39 = document.querySelector('.btn-del39');
+const btnDel40 = document.querySelector('.btn-del40');
+const btnDel41 = document.querySelector('.btn-del41');
+// Portfolio
+const btnDel42 = document.querySelector('.btn-del42');
+const btnDel43 = document.querySelector('.btn-del43');
+const btnDel44 = document.querySelector('.btn-del44');
+const btnDel45 = document.querySelector('.btn-del45');
+const btnDel46 = document.querySelector('.btn-del46');
+// History
+const btnDel47 = document.querySelector('.btn-del47');
+const btnDel48 = document.querySelector('.btn-del48');
+const btnDel49 = document.querySelector('.btn-del49');
+const btnDel50 = document.querySelector('.btn-del50');
+const btnDel51 = document.querySelector('.btn-del51');
+const btnDel52 = document.querySelector('.btn-del52');
+const btnDel53 = document.querySelector('.btn-del53');
+const btnDel54 = document.querySelector('.btn-del54');
+const btnDel55 = document.querySelector('.btn-del55');
+const btnDel56 = document.querySelector('.btn-del56');
+const btnDel57 = document.querySelector('.btn-del57');
+const btnDel58 = document.querySelector('.btn-del58');
+const btnDel59 = document.querySelector('.btn-del59');
+const btnDel60 = document.querySelector('.btn-del60');
+const btnDel61 = document.querySelector('.btn-del61');
+const btnDel62 = document.querySelector('.btn-del62');
+const btnDel63 = document.querySelector('.btn-del63');
+const btnDel64 = document.querySelector('.btn-del64');
+// Contact
+const btnDel65 = document.querySelector('.btn-del65');
+const btnDel66 = document.querySelector('.btn-del66');
+const btnDel67 = document.querySelector('.btn-del67');
+const btnDel68 = document.querySelector('.btn-del68');
+const btnDel69 = document.querySelector('.btn-del69');
+const btnDel70 = document.querySelector('.btn-del70');
+const btnDel71 = document.querySelector('.btn-del71');
+const btnDel72 = document.querySelector('.btn-del72');
+const btnDel73 = document.querySelector('.btn-del73');
+const btnDel74 = document.querySelector('.btn-del74');
+const btnDel75 = document.querySelector('.btn-del75');
+const btnDel76 = document.querySelector('.btn-del76');
 
-
-console.log(btnDel1)
-
+// All
 btnDel1.onclick = function deleteName() {
 	localStorage.removeItem("headerIndex");
 }
-console.log(btnDel2)
-
 btnDel2.onclick = function deleteName() {
 	localStorage.removeItem("headerIndex1");
 }
+btnDel3.onclick = function deleteName() {
+	localStorage.removeItem("footerIndex");
+}
+btnDel4.onclick = function deleteName() {
+	localStorage.removeItem("footerIndex1");
+}
+// Index
+btnDel5.onclick = function deleteName() {
+	localStorage.removeItem("sliderIndex");
+}
+btnDel6.onclick = function deleteName() {
+	localStorage.removeItem("contentIndex");
+}
+btnDel7.onclick = function deleteName() {
+	localStorage.removeItem("contentIndex1");
+}
+btnDel8.onclick = function deleteName() {
+	localStorage.removeItem("contentIndex2");
+}
+btnDel9.onclick = function deleteName() {
+	localStorage.removeItem("contentIndex3");
+}
+btnDel10.onclick = function deleteName() {
+	localStorage.removeItem("contentIndex4");
+}
+btnDel11.onclick = function deleteName() {
+	localStorage.removeItem("contentIndex5");
+}
+btnDel12.onclick = function deleteName() {
+	localStorage.removeItem("contentIndex6");
+}
+btnDel13.onclick = function deleteName() {
+	localStorage.removeItem("contentIndex7");
+}
+btnDel14.onclick = function deleteName() {
+	localStorage.removeItem("contentIndex8");
+}
+// About
+btnDel15.onclick = function deleteName() {
+	localStorage.removeItem("content1About");
+}
+btnDel16.onclick = function deleteName() {
+	localStorage.removeItem("content2About");
+}
+btnDel17.onclick = function deleteName() {
+	localStorage.removeItem("content3About");
+}
+btnDel18.onclick = function deleteName() {
+	localStorage.removeItem("content4About");
+}
+btnDel19.onclick = function deleteName() {
+	localStorage.removeItem("content5About");
+}
+btnDel20.onclick = function deleteName() {
+	localStorage.removeItem("content6About");
+}
+btnDel21.onclick = function deleteName() {
+	localStorage.removeItem("content7About");
+}
+btnDel22.onclick = function deleteName() {
+	localStorage.removeItem("content8About");
+}
+btnDel23.onclick = function deleteName() {
+	localStorage.removeItem("content9About");
+}
+btnDel24.onclick = function deleteName() {
+	localStorage.removeItem("content10About");
+}
+btnDel25.onclick = function deleteName() {
+	localStorage.removeItem("content11About");
+}
+btnDel26.onclick = function deleteName() {
+	localStorage.removeItem("content12About");
+}
+btnDel27.onclick = function deleteName() {
+	localStorage.removeItem("content13About");
+}
+btnDel28.onclick = function deleteName() {
+	localStorage.removeItem("content14About");
+}
+// Blog
+btnDel29.onclick = function deleteName() {
+	localStorage.removeItem("content1Blog");
+}
+btnDel30.onclick = function deleteName() {
+	localStorage.removeItem("content2Blog");
+}
+btnDel31.onclick = function deleteName() {
+	localStorage.removeItem("content3Blog");
+}
+btnDel32.onclick = function deleteName() {
+	localStorage.removeItem("content1BlogList");
+}
+btnDel33.onclick = function deleteName() {
+	localStorage.removeItem("content2BlogList");
+}
+btnDel34.onclick = function deleteName() {
+	localStorage.removeItem("content3BlogList");
+}
+btnDel35.onclick = function deleteName() {
+	localStorage.removeItem("content4BlogList");
+}
+btnDel36.onclick = function deleteName() {
+	localStorage.removeItem("content5BlogList");
+}
+btnDel37.onclick = function deleteName() {
+	localStorage.removeItem("content6BlogList");
+}
+btnDel38.onclick = function deleteName() {
+	localStorage.removeItem("content7BlogList");
+}
+btnDel39.onclick = function deleteName() {
+	localStorage.removeItem("content4Blog");
+}
+btnDel40.onclick = function deleteName() {
+	localStorage.removeItem("content5Blog");
+}
+btnDel41.onclick = function deleteName() {
+	localStorage.removeItem("content6Blog");
+}
+// Portfolio
+btnDel42.onclick = function deleteName() {
+	localStorage.removeItem("content1Portfolio");
+}
+btnDel43.onclick = function deleteName() {
+	localStorage.removeItem("content2Portfolio");
+}
+btnDel44.onclick = function deleteName() {
+	localStorage.removeItem("content3Portfolio");
+}
+btnDel45.onclick = function deleteName() {
+	localStorage.removeItem("content4Portfolio");
+}
+btnDel46.onclick = function deleteName() {
+	localStorage.removeItem("content5Portfolio");
+}
+// History
+btnDel47.onclick = function deleteName() {
+	localStorage.removeItem("content1History");
+}
+btnDel48.onclick = function deleteName() {
+	localStorage.removeItem("content2History");
+}
+btnDel49.onclick = function deleteName() {
+	localStorage.removeItem("content3History");
+}
+btnDel50.onclick = function deleteName() {
+	localStorage.removeItem("content4History");
+}
+btnDel51.onclick = function deleteName() {
+	localStorage.removeItem("content5History");
+}
+btnDel52.onclick = function deleteName() {
+	localStorage.removeItem("content6History");
+}
+btnDel53.onclick = function deleteName() {
+	localStorage.removeItem("content7History");
+}
+btnDel54.onclick = function deleteName() {
+	localStorage.removeItem("content8History");
+}
+btnDel55.onclick = function deleteName() {
+	localStorage.removeItem("content9History");
+}
+btnDel56.onclick = function deleteName() {
+	localStorage.removeItem("content10History");
+}
+btnDel57.onclick = function deleteName() {
+	localStorage.removeItem("content11History");
+}
+btnDel58.onclick = function deleteName() {
+	localStorage.removeItem("content12History");
+}
+btnDel59.onclick = function deleteName() {
+	localStorage.removeItem("content13History");
+}
+btnDel60.onclick = function deleteName() {
+	localStorage.removeItem("content14History");
+}
+btnDel61.onclick = function deleteName() {
+	localStorage.removeItem("content15History");
+}
+btnDel62.onclick = function deleteName() {
+	localStorage.removeItem("content16History");
+}
+btnDel63.onclick = function deleteName() {
+	localStorage.removeItem("content17History");
+}
+btnDel64.onclick = function deleteName() {
+	localStorage.removeItem("content18History");
+}
+// Contact
+btnDel65.onclick = function deleteName() {
+	localStorage.removeItem("content1Contact");
+}
+btnDel66.onclick = function deleteName() {
+	localStorage.removeItem("content2Contact");
+}
+btnDel67.onclick = function deleteName() {
+	localStorage.removeItem("content3Contact");
+}
+btnDel68.onclick = function deleteName() {
+	localStorage.removeItem("content4Contact");
+}
+btnDel69.onclick = function deleteName() {
+	localStorage.removeItem("content5Contact");
+}
+btnDel70.onclick = function deleteName() {
+	localStorage.removeItem("content6Contact");
+}
+btnDel71.onclick = function deleteName() {
+	localStorage.removeItem("content7Contact");
+}
+btnDel72.onclick = function deleteName() {
+	localStorage.removeItem("content8Contact");
+}
+btnDel73.onclick = function deleteName() {
+	localStorage.removeItem("content9Contact");
+}
+btnDel74.onclick = function deleteName() {
+	localStorage.removeItem("content10Contact");
+}
+btnDel75.onclick = function deleteName() {
+	localStorage.removeItem("content11Contact");
+}
+btnDel76.onclick = function deleteName() {
+	localStorage.removeItem("content12Contact");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -520,109 +857,109 @@ btnChange46.onclick = function handleSubmit() {
 // History
 btnChange47.onclick = function handleSubmit() {
 	console.log($("#input-content-history1").val());
-	localStorage.setItem("content1Portfolio", $("#input-content-history1").val());
+	localStorage.setItem("content1History", $("#input-content-history1").val());
 	$("#input-content-history1").val("");
 }
 
 btnChange48.onclick = function handleSubmit() {
 	console.log($("#input-content-history2").val());
-	localStorage.setItem("content2Portfolio", $("#input-content-history2").val());
+	localStorage.setItem("content2History", $("#input-content-history2").val());
 	$("#input-content-history2").val("");
 }
 
 btnChange49.onclick = function handleSubmit() {
 	console.log($("#input-content-history3").val());
-	localStorage.setItem("content3Portfolio", $("#input-content-history3").val());
+	localStorage.setItem("content3History", $("#input-content-history3").val());
 	$("#input-content-history3").val("");
 }
 
 btnChange50.onclick = function handleSubmit() {
 	console.log($("#input-content-history4").val());
-	localStorage.setItem("content4Portfolio", $("#input-content-history4").val());
+	localStorage.setItem("content4History", $("#input-content-history4").val());
 	$("#input-content-history4").val("");
 }
 
 btnChange51.onclick = function handleSubmit() {
 	console.log($("#input-content-history5").val());
-	localStorage.setItem("content5Portfolio", $("#input-content-history5").val());
+	localStorage.setItem("content5History", $("#input-content-history5").val());
 	$("#input-content-history5").val("");
 }
 
 btnChange52.onclick = function handleSubmit() {
 	console.log($("#input-content-history6").val());
-	localStorage.setItem("content6Portfolio", $("#input-content-history6").val());
+	localStorage.setItem("content6History", $("#input-content-history6").val());
 	$("#input-content-history6").val("");
 }
 
 btnChange53.onclick = function handleSubmit() {
 	console.log($("#input-content-history7").val());
-	localStorage.setItem("content7Portfolio", $("#input-content-history7").val());
+	localStorage.setItem("content7History", $("#input-content-history7").val());
 	$("#input-content-history7").val("");
 }
 
 btnChange54.onclick = function handleSubmit() {
 	console.log($("#input-content-history8").val());
-	localStorage.setItem("content8Portfolio", $("#input-content-history8").val());
+	localStorage.setItem("content8History", $("#input-content-history8").val());
 	$("#input-content-history8").val("");
 }
 
 btnChange55.onclick = function handleSubmit() {
 	console.log($("#input-content-history9").val());
-	localStorage.setItem("content9Portfolio", $("#input-content-history9").val());
+	localStorage.setItem("content9History", $("#input-content-history9").val());
 	$("#input-content-history9").val("");
 }
 
 btnChange56.onclick = function handleSubmit() {
 	console.log($("#input-content-history10").val());
-	localStorage.setItem("content10Portfolio", $("#input-content-history10").val());
+	localStorage.setItem("content10History", $("#input-content-history10").val());
 	$("#input-content-history10").val("");
 }
 
 btnChange57.onclick = function handleSubmit() {
 	console.log($("#input-content-history11").val());
-	localStorage.setItem("content11Portfolio", $("#input-content-history11").val());
+	localStorage.setItem("content11History", $("#input-content-history11").val());
 	$("#input-content-history11").val("");
 }
 
 btnChange58.onclick = function handleSubmit() {
 	console.log($("#input-content-history12").val());
-	localStorage.setItem("content12Portfolio", $("#input-content-history12").val());
+	localStorage.setItem("content12History", $("#input-content-history12").val());
 	$("#input-content-history12").val("");
 }
 
 btnChange59.onclick = function handleSubmit() {
 	console.log($("#input-content-history13").val());
-	localStorage.setItem("content13Portfolio", $("#input-content-history13").val());
+	localStorage.setItem("content13History", $("#input-content-history13").val());
 	$("#input-content-history13").val("");
 }
 
 btnChange60.onclick = function handleSubmit() {
 	console.log($("#input-content-history14").val());
-	localStorage.setItem("content14Portfolio", $("#input-content-history14").val());
+	localStorage.setItem("content14History", $("#input-content-history14").val());
 	$("#input-content-history14").val("");
 }
 
 btnChange61.onclick = function handleSubmit() {
 	console.log($("#input-content-history15").val());
-	localStorage.setItem("content15Portfolio", $("#input-content-history15").val());
+	localStorage.setItem("content15History", $("#input-content-history15").val());
 	$("#input-content-history15").val("");
 }
 
 btnChange62.onclick = function handleSubmit() {
 	console.log($("#input-content-history16").val());
-	localStorage.setItem("content16Portfolio", $("#input-content-history16").val());
+	localStorage.setItem("content16History", $("#input-content-history16").val());
 	$("#input-content-history16").val("");
 }
 
 btnChange63.onclick = function handleSubmit() {
 	console.log($("#input-content-history17").val());
-	localStorage.setItem("content17Portfolio", $("#input-content-history17").val());
+	localStorage.setItem("content17History", $("#input-content-history17").val());
 	$("#input-content-history17").val("");
 }
 
 btnChange64.onclick = function handleSubmit() {
 	console.log($("#input-content-history18").val());
-	localStorage.setItem("content18Portfolio", $("#input-content-history18").val());
+	localStorage.setItem("content18History", $("#input-content-history18").val());
 	$("#input-content-history18").val("");
 }
 

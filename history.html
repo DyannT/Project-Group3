@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,7 +11,32 @@
     <link rel="stylesheet" href="./assets/font(icon)/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="./assets/css/style-history.css">
 </head>
+
 <body>
+    <!-- Start-Loading -->
+    <!-- <div id="preloader" class="loading">
+        <div class="loader">
+            <div class="loader-inner">
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- <script src='./assets/js/script-loading.js'></script> -->
+    <!-- End-loading -->
     <div id="main">
         <!-- Start header -->
         <div id="header">
@@ -18,8 +44,8 @@
                 <div class="row">
                     <div class="col l-12 m-12 c-12">
                         <div class="desc-header">
-                            <h1><a href="index.html">“Alice comes back home”</a></h1>
-                            <p>AUTHOR: TOM CURSON</p>
+                            <h1><a class = "title-header" href="index.html">“Alice comes back home”</a></h1>
+                            <p class = "title-header-author">AUTHOR: TOM CURSON</p>
                         </div>
                     </div>
                 </div>
@@ -109,46 +135,16 @@
                     </div>
                     <div class="row">
                         <div class="col l-6 m-12 c-12">
-                            <div class="card-history slide-in from-left">
-                                <div class="container"  style="overflow: hidden;width: 100%;">
-                                    <div class="image">
-                                        <img src="./assets/img/history1.jpg" alt=""  style="width: 100%;">
+                            <div class="card-history slide-in from-left ">
+                                <div class="container" style="overflow: hidden;width: 100%;">
+                                    <div class="image image">
+                                        <img src="./assets/img/history1.jpg" alt="" style = "width:100%">
                                     </div>
                                 </div>
     
                                 <div class="card-content-history">
                                     <a href="">Phasellus vel ante sit amet lacinia hendrerit.</a>
-                                    <p>Etiam vulputate a eros id porta. Donec eu tristique Mauris nec blandit massa. Nulla
-                                        vel luctus eros pro nisl ut ligula suscipit euismod vitae at diam.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col l-6 m-12 c-12">
-                            <div class="card-history slide-in from-right">
-                                <div class="container"  style="overflow: hidden;width: 100%;">
-                                    <div class="image">
-                                        <img src="./assets/img/history2.jpg" alt=""  style="width: 100%;">
-                                    </div>
-                                </div>
-    
-                                <div class="card-content-history">
-                                    <a href="">Integer iaculis enim tortor, nec fermentum.</a>
-                                    <p>Donec eu tristique Mauris nec blandit massa. Nulla vel luctus eros pronisl ut ligula
-                                        suscipit euismod vitae at diam. Cras purus nisl, mollis eget.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col l-6 m-12 c-12">
-                            <div class="card-history slide-in from-left">
-                                <div class="container"  style="overflow: hidden;width: 100%;">
-                                    <div class="image">
-                                        <img src="./assets/img/history3.jpg" alt=""  style="width: 100%;">
-                                    </div>
-                                </div>
-    
-                                <div class="card-content-history">
-                                    <a href="">Maecenas aliquam, elit vitae rhoncus lobortis.</a>
-                                    <p>Etiam vulputate a eros id porta. Donec eu tristique Mauris nec blandit massa. Nulla
+                                    <p class="txt-card-history1">Etiam vulputate a eros id porta. Donec eu tristique Mauris nec blandit massa. Nulla
                                         vel luctus eros pro nisl ut ligula suscipit euismod vitae at diam.</p>
                                 </div>
                             </div>
@@ -156,21 +152,50 @@
                         <div class="col l-6 m-12 c-12">
                             <div class="card-history slide-in from-right">
                                 <div class="container" style="overflow: hidden;width: 100%;">
-                                    <div class="image">
-                                        <img src="./assets/img/history4.jpg" alt="" style="width: 100%;">
+                                    <div class="image image">
+                                        <img src="./assets/img/history2.jpg" alt="" style = "width:100%">
                                     </div>
                                 </div>
     
                                 <div class="card-content-history">
-                                    <a href="">In at enim eu purus pretium semper sit amet.</a>
-                                    <p>Donec eu tristique Mauris nec blandit massa. Nulla vel luctus eros pronisl ut ligula
+                                    <a href="" >Integer iaculis enim tortor, nec fermentum.</a>
+                                    <p class="txt-card-history2">Donec eu tristique Mauris nec blandit massa. Nulla vel luctus eros pronisl ut ligula
+                                        suscipit euismod vitae at diam. Cras purus nisl, mollis eget.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-6 m-12 c-12">
+                            <div class="card-history slide-in from-left">
+                                <div class="container" style="overflow: hidden;width: 100%;">
+                                    <div class="image image">
+                                        <img src="./assets/img/history3.jpg" alt="" style = "width:100%">
+                                    </div>
+                                </div>
+    
+                                <div class="card-content-history">
+                                    <a href="" >Maecenas aliquam, elit vitae rhoncus lobortis.</a>
+                                    <p class="txt-card-history3">Etiam vulputate a eros id porta. Donec eu tristique Mauris nec blandit massa. Nulla
+                                        vel luctus eros pro nisl ut ligula suscipit euismod vitae at diam.  </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col l-6 m-12 c-12">
+                            <div class="card-history slide-in from-right">
+                                <div class="container" style="overflow: hidden;width: 100%;">
+                                    <div class="image image">
+                                        <img src="./assets/img/history4.jpg" alt="" style = "width:100%">
+                                    </div>
+                                </div>
+    
+                                <div class="card-content-history">
+                                    <a href="" >In at enim eu purus pretium semper sit amet.</a>
+                                    <p class="txt-card-history4">Donec eu tristique Mauris nec blandit massa. Nulla vel luctus eros pronisl ut ligula
                                         suscipit euismod vitae at diam. Cras purus nisl, mollis eget.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
                 <div class="grid wide">
                     <div class="row">
                         <div class="col l-8 m-8 c-12">
@@ -185,22 +210,22 @@
                             <div class="row">
                                 <div class="col l-6 m-6 c-12 slide-in from-left">
                                     <ul class="list-content">
-                                        <li><a href="#">Etiam vulputate a eros id porta</a></li>
-                                        <li><a href="#">Donec eu tristique nunc quisque porta</a></li>
-                                        <li><a href="#">Sollicitudin magna non sagittis</a></li>
-                                        <li><a href="#">Mauris nec blandit massa</a></li>
-                                        <li><a href="#">Nulla vel luctus eros proin nec nisl</a></li>
-                                        <li><a href="#">Utigula suscipit euismod vitae at diam</a></li>
+                                        <li><a class="list-content1" href="#">Etiam vulputate a eros id porta</a></li>
+                                        <li><a class="list-content2"  href="#">Donec eu tristique nunc quisque porta</a></li>
+                                        <li><a class="list-content3"  href="#">Sollicitudin magna non sagittis</a></li>
+                                        <li><a class="list-content4"  href="#">Mauris nec blandit massa</a></li>
+                                        <li><a class="list-content5"  href="#">Nulla vel luctus eros proin nec nisl</a></li>
+                                        <li><a class="list-content6"  href="#">Utigula suscipit euismod vitae at diam</a></li>
                                     </ul>
                                 </div>
                                 <div class="col l-6 m-6 c-12 slide-in from-right">
                                     <ul class="list-content">
-                                        <li><a href="#">Nulla vel luctus eros proin nec nisl</a></li>
-                                        <li><a href="#">Utigula suscipit euismod vitae at diam</a></li>
-                                        <li><a href="#">Cras purus nisl mollis eget sapien et</a></li>
-                                        <li><a href="#">adipiscing bibendum massa</a></li>
-                                        <li><a href="#">Vestibulum placerat bibendum risus quis</a></li>
-                                        <li><a href="#">Adipiscing nunc malesuada et</a></li>
+                                        <li><a class="list-content7"  href="#">Nulla vel luctus eros proin nec nisl</a></li>
+                                        <li><a class="list-content8"  href="#">Utigula suscipit euismod vitae at diam</a></li>
+                                        <li><a class="list-content9"  href="#">Cras purus nisl mollis eget sapien et</a></li>
+                                        <li><a class="list-content10"  href="#">adipiscing bibendum massa</a></li>
+                                        <li><a class="list-content11"  href="#">Vestibulum placerat bibendum risus quis</a></li>
+                                        <li><a class="list-content12"  href="#">Adipiscing nunc malesuada et</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -209,21 +234,19 @@
                         <div class="col l-4 m-4 c-12">
                             <div class="header-list fade-in">
                                     <h3>BORN OF REAL LIFE</h3>
-                                <div class="container" style="overflow: hidden;">
-                                    <div class="image">
+                                <div class="container" style = "overflow: hidden">
+                                    <div class="image image">
                                         <img src="./assets/img/history5.jpg" alt="">
                                     </div>
                                 </div>
     
-                                <p>Etiam vulputate a eros id porta. Donec eu tristique nunc. Quisque porta sollicitudin
+                                <p class = "title-footer txt-poster">Etiam vulputate a eros id porta. Donec eu tristique nunc. Quisque porta sollicitudin
                                     magna non sagittis. Mauris nec blandit massa. Nulla vel luctus eros. Proin nec nisl ut
                                     ligula suscipit euismod vitae at diam. Cras massa.Vestibulum placerat bibendum.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-
-
             </div>
             <!-- End-content -->
     
@@ -273,7 +296,7 @@
                     <div class="row">
                         <div class="col l-12 m-12 c-12">
                             <div class="text-desc">
-                                <p>Alice comes back home © 2022 |
+                                <p class="title-footer-desc">Alice comes back home © 2022 |
                                     <span><a href="#"> Privacy Policy</a></span>
                                 </p>
                             </div>
@@ -285,8 +308,16 @@
         </main>
 
     </div>
+    <!-- Query -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+    <!-- Admin-change-history -->
+    <script src="./assets/js/script-admin-history.js"></script>
+    <!-- Admin-change-all -->
+    <script src="./assets/js/script-all.js"></script>
+    <!-- Script-Menu -->
     <script src="./assets/js/scripts.js"></script>
+    <!-- Transition when scroll down -->
     <script src="./assets/js/observers.js"></script>
-
 </body>
+
 </html>

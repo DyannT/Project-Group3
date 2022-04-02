@@ -13,6 +13,31 @@
 </head>
 
 <body>
+    <!-- Start-Loading -->
+    <!-- <div id="preloader" class="loading">
+        <div class="loader">
+            <div class="loader-inner">
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+                <div class="loader-line-wrap">
+                    <div class="loader-line"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='./assets/js/script-loading.js'></script> -->
+    <!-- End-loading -->
+
     <div id="main">
         <!-- Start header -->
         <div id="header">
@@ -20,8 +45,8 @@
                 <div class="row">
                     <div class="col l-12 m-12 c-12">
                         <div class="desc-header">
-                            <h1><a href="index.html">“Alice comes back home”</a></h1>
-                            <p>AUTHOR: TOM CURSON</p>
+                            <h1><a class = "title-header" href="index.html">“Alice comes back home”</a></h1>
+                            <p  class = "title-header-author">AUTHOR: TOM CURSON</p>
                         </div>
                     </div>
                 </div>
@@ -29,16 +54,15 @@
         </div>
         <!-- End header -->
 
-        <!-- Start Nav -->
+        <!-- Start-nav -->
         <div id="nav">
             <div class="grid wide">
-                <!-- Start Menu -->
+                <!-- Start-Menu -->
                 <div class="row">
                     <div class="col l-12 m-12">
                         <div id="menu">
                             <ul class="menu1">
-                                <li style="width: 131px;">
-                                   <a style="display: flex;align-items: center;"
+                                <li style="width: 131px;"><a style="display: flex;align-items: center;"
                                         href="index.html">Home
                                         <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
                                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -49,9 +73,9 @@
                                         </svg>
                                     </a>
                                     <ul class="menu2">
-                                        <li><a href="">About</a></li>
-                                        <li><a href="">History</a></li>
-                                        <li><a style="display: flex;align-items: center;" href="">News
+                                        <li><a href="about.html">About</a></li>
+                                        <li><a href="history.html">History</a></li>
+                                        <li><a style="display: flex;align-items: center;" href="#">News
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -74,14 +98,14 @@
                                 <li style="width: 131px;"><a href="contacts.html">Contact</a></li>
                                 <li style="width: 131px;"><a href="login.html">Login</a></li>
                             </ul>
-
+                            <div class="clear"></div>
                         </div>
                     </div>
                 </div>
-                <!-- End menu -->
+                <!-- End-Menu -->
 
-                 <!-- Start-Taskbar-responsive -->
-                 <div class="row">
+                <!-- Start-Taskbar-responsive -->
+                <div class="row">
                     <div class="col l-0 m-0 c-12">
                         <div class="btn-taskbar-mobile">
                             <svg id="mobile-menu" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -98,301 +122,258 @@
                     </div>
                 </div>
                 <!-- End-Taskbar-responsive -->
-
-
             </div>
         </div>
-        <!-- End nav -->
+        <!-- End-nav -->
+
         <main>
             <section class="home-intro"></section>
-            <!-- Start-content -->
-            <div id="content">
-                <div class="grid wide">
-                    <div class="row">
-                        <div class="col l-7 m-7 c-12">
-                            <!-- Left content -->
-                            <div class="left-row-content">
+        <!-- Start-content -->
+        <div id="content">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-7 m-7 c-12">
+                        <div class="left-row-content">
+                            <div class="fade-in">
+                                <h3>Blog</h3>
+                            </div>
+                            <div class="btn-left-content">
                                 <div class="fade-in">
-                                    <h3>Blog</h3>
-                                </div>
-
-                                <div class="btn-left-content">
-                                    <div class="fade-in">
-                                        <a href="" class="header-left-content">Duis tempus nisl vitae sapien fermentum, quis blandit.</a>
-                                        <div class="row">
-                                            <div class="col l-2-4 m-2-4 c-6">
-                                                <a class="second-btn" href="">14 July 2014</a>
-
-                                            </div>
-                                            <div class="col l-2-4 m-2-4 c-6">
-                                                <a class="second-btn" href="">By Admin</a>
-
-                                            </div>
-                                            <div class="col l-4 m-2-4 c-6">
-                                                <a class="second-btn" href="">In aenean nonummy</a>
-                                            </div>
-                                            <div class="col l-3 m-2-4 c-6">
-                                                <a class="second-btn" href="">Comments 10</a>
-
-                                            </div>
+                                    <a class="header-left-content" href="">Duis tempus nisl vitae sapien fermentum, quis
+                                        blandit.</a>
+                                    <div class="row" style="justify-content: space-between;">
+                                        <div class="col l-2-4 m-2-4 c-6">
+                                            <a class="second-btn" href="">14 July 2014</a>
+                                        </div>
+                                        <div class="col l-2-4 m-2-4 c-6">
+                                            <a class="second-btn" href="">By Admin</a>
+                                        </div>
+                                        <div class="col l-4 m-2-4 c-6">
+                                            <a class="second-btn" href="">In aenean nonummy</a>
+                                        </div>
+                                        <div class="col l-3 m-2-4 c-6">
+                                            <a class="second-btn" href="">Comments 10</a>
                                         </div>
                                     </div>
+                                </div>
 
+                                <div class="row">
+                                    <div class="col l-4 m-12 c-12 slide-in from-left">
+                                        <div class="blog-img">
+                                            <div class="container">
+                                                <div class="image">
+                                                    <img src="./assets/img/img-blog.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col l-8 m-12 c-12 slide-in from-right">
+                                        <div class="blog-page">
+                                            <p class = "txt-blog-page1">Etiam vulputate a eros id porta. Donec eu tristique nunc. Quisque porta
+                                                sollicitudin magna non sagittis. Mauris nec blandit massa. Nulla vel
+                                                luctus eros. Proin nec nisl ut ligula suscipit euismod vitae at diam.
+                                                Cras massa.Vestibulum placerat bibendum risus, quis molestie est felis.,
+                                                eu semper augue facilisis quis! Phaselhendrerit lorem, a aliquam nisl
+                                                libero sed sapien. Phasellus non nterdum placerat. Class aptent taciti
+                                                sociosqu.</p>
+                                            <a class="blog-page-btn" href="">More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="btn-left-content">
+                                <div class="fade-in">
+                                    <a class="header-left-content" href="">Fusce turpis lacus, vestibulum sit amet
+                                        condimentum in.</a>
+                                    <div class="row" style="justify-content: space-between;">
+                                        <div class="col l-2-4 m-2-4 c-6">
+                                            <a class="second-btn" href="">14 July 2014</a>
+                                        </div>
+                                        <div class="col l-2-4 m-2-4 c-6">
+                                            <a class="second-btn" href="">By Admin</a>
+                                        </div>
+                                        <div class="col l-4 m-2-4 c-6">
+                                            <a class="second-btn" href="">In aenean nonummy</a>
+                                        </div>
+                                        <div class="col l-3 m-2-4 c-6">
+                                            <a class="second-btn" href="">Comments 10</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col l-4 m-12 c-12">
+                                        <div class="blog-img slide-in from-left">
+                                            <div class="container">
+                                                <div class="image">
+                                                    <img src="./assets/img/img-blog1.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col l-8 m-12 c-12">
+                                        <div class="blog-page slide-in from-right">
+                                            <p class = "txt-blog-page2">Etiam vulputate a eros id porta. Donec eu tristique nunc. Quisque porta
+                                                sollicitudin magna non sagittis. Mauris nec blandit massa. Nulla vel
+                                                luctus eros. Proin nec nisl ut ligula suscipit euismod vitae at diam.
+                                                Cras massa.Vestibulum placerat bibendum risus, quis molestie est felis.,
+                                                eu semper augue facilisis quis! Phaselhendrerit lorem, a aliquam nisl
+                                                libero sed sapien. Phasellus non nterdum placerat. Class aptent taciti
+                                                sociosqu.</p>
+                                            <a class="blog-page-btn" href="">More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="btn-left-content">
+                                <div class="fade-in">
+                                    <a class="header-left-content" href="">Cras facilisis ultrices euismod. Pellentesque in
+                                        massa et.</a>
+                                    <div class="row" style="justify-content: space-between;">
+                                        <div class="col l-2-4 m-2-4 c-6">
+                                            <a class="second-btn" href="">14 July 2014</a>
+                                        </div>
+                                        <div class="col l-2-4 m-2-4 c-6">
+                                            <a class="second-btn" href="">By Admin</a>
+                                        </div>
+                                        <div class="col l-4 m-2-4 c-6">
+                                            <a class="second-btn" href="">In aenean nonummy</a>
+                                        </div>
+                                        <div class="col l-3 m-2-4 c-6">
+                                            <a class="second-btn" href="">Comments 10</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col l-4 m-12 c-12">
+                                        <div class="blog-img slide-in from-left">
+                                            <div class="container">
+                                                <div class="image">
+                                                    <img src="./assets/img/img-blog2.jpg" alt="">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="col l-8 m-12 c-12">
+                                        <div class="blog-page slide-in from-right">
+                                            <p  class = "txt-blog-page3">Etiam vulputate a eros id porta. Donec eu tristique nunc. Quisque porta
+                                                sollicitudin magna non sagittis. Mauris nec blandit massa. Nulla vel
+                                                luctus eros. Proin nec nisl ut ligula suscipit euismod vitae at diam.
+                                                Cras massa.Vestibulum placerat bibendum risus, quis molestie est felis.,
+                                                eu semper augue facilisis quis! Phaselhendrerit lorem, a aliquam nisl
+                                                libero sed sapien. Phasellus non nterdum placerat. Class aptent taciti
+                                                sociosqu.</p>
+                                            <a class="blog-page-btn" href="">More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col l-5 m-5 c-12">
+                        <div class="right-row-content">
+                            <div class="fade-in">
+                                <h3>CATEGORIES</h3>
+                            </div>
+                            <div>
+                                <ul class="list-categories  slide-in from-right">
+                                    <li class="list-categories1" ><a href="#">Lorem ipsum dolor sit amet</a></li>
+                                    <li class="list-categories2"><a href="#">Consectetuer adipisc</a></li>
+                                    <li class="list-categories3"><a href="#">Praesent vestibulum molestie</a></li>
+                                    <li class="list-categories4"><a href="#">Morbi nunc odio, gravida at, cursus</a></li>
+                                    <li class="list-categories5"><a href="#">Duis ultricies pharetra</a></li>
+                                    <li class="list-categories6"><a href="#">Donec sit amet eros</a></li>
+                                    <li class="list-categories7"><a href="#">Lorem ipsum dolor sit ame</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="search-blog">
+                                <div class="fade-in">
+                                    <h3>SEARCH</h3>
+                                </div>
+                                <div class="input-search slide-in from-right">
+                                    <input type="text" required placeholder="Enter keyword:">
+                                    <a href="" class="more_btn2"></a>
+                                </div>
+                            </div>
+
+                            <div class="recent-posts">
+                                <div class="fade-in">
+                                    <h3>RECENT POSTS</h3>
+                                </div>
+                                <div class="card-recent-posts">
                                     <div class="row">
-                                        <div class="col l-4 m-12 c-12 slide-in from-left">
-                                            <div class="blog-img">
-                                                <div class="container">
-                                                    <div class="image">
-                                                        <img src="./assets/img/img-blog.jpg" alt="">
-                                                    </div>
+                                        <div class="col l-4 m-12 c-12 img-recent-post slide-in from-left">
+                                            <div class="container" style = "overflow: hidden">
+                                                <div class="image">
+                                                    <img src="./assets/img/recent-posts-1.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div class="col l-8 m-12 c-12 slide-in from-right">
-                                            <div class="blog-page">
-                                                <p>
-                                                    Etiam vulputate a eros id porta. Donec eu tristique nunc. Quisque
-                                                    porta
-                                                    sollicitudin magna non sagittis. Mauris nec blandit massa. Nulla vel
-                                                    luctus eros. Proin nec nisl ut ligula suscipit euismod vitae at
-                                                    diam.
-                                                    Cras massa.Vestibulum placerat bibendum risus, quis molestie est
-                                                    felis.,
-                                                    eu semper augue facilisis quis! Phaselhendrerit lorem, a aliquam
-                                                    nisl
-                                                    libero sed sapien. Phasellus non nterdum placerat. Class aptent
-                                                    taciti
-                                                    sociosqu.
-                                                </p>
-                                               <a href="" class="blog-page-btn">More</a>
+                                            <div class="btn-recent-posts">
+                                                <a href="">Ehiugue massa.</a>
                                             </div>
+                                            <p class="txt-recent-posts1">Etiam vulputate a eros id porta. Donec eu tristique mauris nec. blandit
+                                                massa. Nulla vel luctu s eros pronisl.</p>
                                         </div>
                                     </div>
                                 </div>
-
-                                <div class="btn-left-content">
-                                    <div class="fade-in">
-                                        <a href="" class="header-left-content">Fusce turpis lacus, vestibulum sit amet
-                                            condime.</a>
-                                        <div class="row" >
-                                            <div class="col l-2-4 m-2-4 c-6">
-                                                <a class="second-btn" href="">14 July 2014</a>
-
-                                            </div>
-                                            <div class="col l-2-4 m-2-4 c-6">
-                                                <a class="second-btn" href="">By Admin</a>
-
-                                            </div>
-                                            <div class="col l-4 m-2-4 c-6">
-                                                <a class="second-btn" href="">In aenean nonummy</a>
-                                            </div>
-                                            <div class="col l-3 m-2-4 c-6">
-                                                <a class="second-btn" href="">Comments 10</a>
-
-                                            </div>
-                                        </div>
-                                    </div>
-
+                                <div class="card-recent-posts">
                                     <div class="row">
-                                        <div class="col l-4 m-12 c-12">
-                                            <div class="blog-img slide-in from-left">
-                                                <div class="container">
-                                                    <div class="image">
-                                                        <img src="./assets/img/img-blog1.jpg" alt="">
-                                                    </div>
+                                        <div class="col l-4 m-12 c-12 slide-in from-left">
+                                            <div class="container" style = "overflow: hidden">
+                                                <div class="image">
+                                                    <img src="./assets/img/recent-posts-2.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
 
-                                        <div class="col l-8 m-12 c-12">
-                                            <div class="blog-page slide-in from-right">
-                                                <p>
-                                                    Etiam vulputate a eros id porta. Donec eu tristique nunc. Quisque
-                                                    porta
-                                                    sollicitudin magna non sagittis. Mauris nec blandit massa. Nulla vel
-                                                    luctus eros. Proin nec nisl ut ligula suscipit euismod vitae at
-                                                    diam.
-                                                    Cras massa.Vestibulum placerat bibendum risus, quis molestie est
-                                                    felis.,
-                                                    eu semper augue facilisis quis! Phaselhendrerit lorem, a aliquam
-                                                    nisl
-                                                    libero sed sapien. Phasellus non nterdum placerat. Class aptent
-                                                    taciti
-                                                    sociosqu.
-                                                </p>
-                                              <a href="" class="blog-page-btn">More</a>
+                                        <div class="col l-8 m-12 c-12 slide-in from-right">
+                                            <div class="btn-recent-posts">
+                                                <a href="">Nec congmris.</a>
                                             </div>
+                                            <p class="txt-recent-posts2">Sapien et, adipiscing bibendum massa. Vestibulum placa Aenean non euismod
+                                                tellus in molestie est felis.</p>
                                         </div>
                                     </div>
                                 </div>
-
-                                <div class="btn-left-content">
-                                    <div class="fade-in">
-                                        <a href="" class="header-left-content">Cras facilisis ultrices euismod. Pellente
-                                            massa et.</a>
-                                        <div class="row">
-                                            <div class="col l-2-4 m-2 c-6">
-                                                <a class="second-btn" href="">14 July 2014</a>
-
-                                            </div>
-                                            <div class="col l-2-4 m-2 c-6">
-                                                <a class="second-btn" href="">By Admin</a>
-
-                                            </div>
-                                            <div class="col l-4 m-2 c-6">
-                                                <a class="second-btn" href="">In aenean nonummy</a>
-                                            </div>
-                                            <div class="col l-3 m-2 c-6">
-                                                <a class="second-btn" href="">Comments 10</a>
-
-                                            </div>
-                                        </div>
-                                    </div>
-
+                                <div class="card-recent-posts">
                                     <div class="row">
-                                        <div class="col l-4 m-12 c-12">
-                                            <div class="blog-img slide-in from-left">
-                                                <div class="container">
-                                                    <div class="image">
-                                                        <img src="./assets/img/img-blog2.jpg" alt="">
-                                                    </div>
+                                        <div class="col l-4 m-12 c-12 slide-in from-left">
+                                            <div class="container" style = "overflow: hidden">
+                                                <div class="image">
+                                                    <img src="./assets/img/recent-posts-3.jpg" alt="">
                                                 </div>
                                             </div>
                                         </div>
 
-                                        <div class="col l-8 m-12 c-12">
-                                            <div class="blog-page slide-in from-right">
-                                                <p>
-                                                    Etiam vulputate a eros id porta. Donec eu tristique nunc. Quisque
-                                                    porta
-                                                    sollicitudin magna non sagittis. Mauris nec blandit massa. Nulla vel
-                                                    luctus eros. Proin nec nisl ut ligula suscipit euismod vitae at
-                                                    diam.
-                                                    Cras massa.Vestibulum placerat bibendum risus, quis molestie est
-                                                    felis.,
-                                                    eu semper augue facilisis quis! Phaselhendrerit lorem, a aliquam
-                                                    nisl
-                                                    libero sed sapien. Phasellus non nterdum placerat. Class aptent
-                                                    taciti
-                                                    sociosqu.
-                                                </p>
-                                            <a href="" class="blog-page-btn">More</a>
+                                        <div class="col l-8 m-12 c-12 slide-in from-right">
+                                            <div class="btn-recent-posts">
+                                                <a href="">Nunc convallis.</a>
                                             </div>
+                                            <p class="txt-recent-posts3">Donec eu tristique mauris nec. blandit massa. Nulla vel luctu ut ligula
+                                                suscipit euismod vitae prus nisl, mollis.</p>
                                         </div>
                                     </div>
-                                </div>
-
-
-
-                            </div>
-                        </div>
-
-                        <!-- Right content -->
-                        <div class="col l-5 m-5 c-12">
-                            <div class="right-row-content">
-                                <div class="fade-in">
-                                    <h3>CATEGORIES</h3>
-                                </div>
-
-                                <div>
-                                    <ul class="list-categories slide-in from-right">
-                                        <li><a href="#">Lorem ipsum dolor sit amet</a></li>
-                                        <li><a href="#">Consectetuer adipisc</a></li>
-                                        <li><a href="#">Praesent vestibulum molestie</a></li>
-                                        <li><a href="#">Morbi nunc odio, gravida at, cursus</a></li>
-                                        <li><a href="#">Duis ultricies pharetra</a></li>
-                                        <li><a href="#">Donec sit amet eros</a></li>
-                                        <li><a href="#">Lorem ipsum dolor sit ame</a></li>
-                                    </ul>
-                                </div>
-                                <div class="search-blog">
-                                    <div class="fade-in">
-                                        <h3>SEARCH</h3>
-                                    </div>
-                                    <div class="input-search slide-in from-right">
-                                        <input type="text" required placeholder="Enter keyword:">
-                                        <a href="" class="more-btn2"></a>
-                                    </div>
-                                </div>
-                                <div class="recent-posts">
-                                    <div class="fade-in">
-                                        <h3>RECENT POSTS</h3>
-                                    </div>
-                                    <div class="card-recent-posts">
-                                        <div class="row">
-                                            <div class="col l-4 m-12 c-12 slide-in from-left">
-                                                <div class="container" style="overflow:hidden">
-                                                    <div class="image">
-                                                        <img src="./assets/img/recent-posts-1.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col l-8 m-12 c-12 slide-in from-right">
-                                                <div class="btn-recent-posts">
-                                                    <a href="">Ehiugue massa</a>
-                                                </div>
-                                                <p>Etiam vulputate a eros id porta. Donec eu tristique mauris nec.
-                                                    blandit
-                                                    massa. Nulla vel luctu s eros pronisl.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="card-recent-posts">
-                                        <div class="row">
-                                            <div class="col l-4 m-12 c-12 slide-in from-left">
-                                                <div class="container" style="overflow:hidden">
-                                                    <div class="image">
-                                                        <img src="./assets/img/recent-posts-2.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col l-8 m-12 c-12 slide-in from-right">
-                                                <div class="btn-recent-posts">
-                                                    <a href="">Nec congmris.</a>
-                                                </div>
-                                                <p>Sapien et, adipiscing bibendum massa. Vestibulum placa Aenean non
-                                                    euismod
-                                                    tellus in molestie est felis.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="card-recent-posts">
-                                        <div class="row">
-                                            <div class="col l-4 m-12 c-12 slide-in from-left">
-                                                <div class="container" style="overflow:hidden">
-                                                    <div class="image">
-                                                        <img src="./assets/img/recent-posts-3.jpg" alt="">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col l-8 m-12 c-12 slide-in from-right">
-                                                <div class="btn-recent-posts">
-                                                    <a href="">Nunc convallis.</a>
-                                                </div>
-                                                <p>Donec eu tristique mauris nec. blandit massa. Nulla vel luctu ut
-                                                    ligula
-                                                    suscipit euismod vitae prus nisl, mollis.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
                                 </div>
                             </div>
 
-
                         </div>
-
-
                     </div>
                 </div>
             </div>
-            <!-- End-content -->
+        </div>
+        <!-- End-content -->
 
-            
         <!-- Start-footer -->
         <div id="footer">
             <div class="grid">
@@ -404,7 +385,7 @@
                             </div>
 
                             <div class="body-text-footer">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maurissemper eu
+                                <p class = "title-footer">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maurissemper eu
                                     turpis sed,
                                     mollis vehicula neque.
                                     Ut in urna ante. Etiam sit amet arcu ante.</p>
@@ -433,13 +414,14 @@
             </div>
         </div>
         <!-- End-footer -->
+
         <!-- Start-footer-desc -->
         <div class="footer-desc">
             <div class="grid wide">
                 <div class="row">
                     <div class="col l-12 m-12 c-12">
                         <div class="text-desc">
-                            <p>Alice comes back home © 2022 |
+                            <p class="title-footer-desc">Alice comes back home © 2022 |
                                 <span><a href="#"> Privacy Policy</a></span>
                             </p>
                         </div>
@@ -450,10 +432,17 @@
         <!-- End-footer-desc -->
     </main>
     </div>
-        </main>
-    </div>
-    <script src="./assets/js/observers.js"></script>
-    <script src="./assets/js/scripts.js"></script>
 
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+    <!-- Admin-change-all -->
+    <script src="./assets/js/script-all.js"></script>
+    <!-- Admin-change-1page -->
+    <script src="./assets/js/script-admin-blog.js"></script>
+    <!-- Script-Menu -->
+    <script src="./assets/js/scripts.js"></script>
+    <!-- Transition when scroll down -->
+    <script src="./assets/js/observers.js"></script>
 </body>
+
 </html>
