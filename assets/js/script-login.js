@@ -231,6 +231,10 @@ var localP = localStorage.getItem("password",$(".create-password-form").val())
 
 // // Check Login
 var loggedIn = false;
+var loggedIn1 = false;
+var loggedIn2 = false;
+
+var token
 
 loginAdmin.onclick = function (e) {
   // e.preventDefault();
@@ -240,7 +244,15 @@ loginAdmin.onclick = function (e) {
 //   loggedIn = login(password);
 //   loggedIn = login(username);
   if(checkLogin(username,password)){
-    loggedIn = true;
+    if(token === 0){
+      loggedIn = true;
+    }
+    if(token === 1){
+      loggedIn1 = true;
+    }
+    if(token === 2){
+      loggedIn2 = true;
+    }
   }
   // console.log(e)
   check(e);
@@ -251,6 +263,7 @@ function checkLogin(username,password) {
     // console.log((data.concat(data1))[i].username)
       if((data).hasOwnProperty(i)){
           if(username === (data)[i].username && password === (data)[i].password){
+              token = i;
               return true;
           }
           else if(username === localU && password === localP){
@@ -272,9 +285,19 @@ function check(e) {
 
   else if(loggedIn) {
     alert('Đăng nhập thành công!!');
-    formLogin.action = 'hosting.html'
+    formLogin.action = 'hosting1.html'
   } 
   
+  else if(loggedIn1) {
+    alert('Đăng nhập thành công!!');
+    formLogin.action = 'hosting2.html'
+  } 
+
+  else if(loggedIn2) {
+    alert('Đăng nhập thành công!!');
+    formLogin.action = 'hosting3.html'
+  } 
+
   else {
     alert('Sai tài khoản hoặc mật khẩu!!!');
     e.preventDefault()
