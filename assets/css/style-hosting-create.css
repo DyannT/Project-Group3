@@ -1,0 +1,330 @@
+/* CSS for all */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+    font-size:16px ;
+}
+
+ul,li{
+    list-style: none;
+}
+
+.clear{
+    clear: both;
+}
+
+body{   
+    background: url(../img/paper.gif);
+    height: fit-content;
+    margin:0;
+}
+
+html{
+    overflow-x: hidden;
+    height:100%;
+}
+
+/* .fade-in {
+    opacity: 0;
+    transition: opacity 250ms ease-in;
+  }
+  
+.fade-in.appear {
+    opacity: 1;
+}
+
+.nav-scrolled {
+    --text: #333;
+    --text-inverse: #f4f4f4;
+    --background: #f4f4f4;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .from-right {
+    grid-column: 3 / 4;
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+  }
+  
+  .from-left,
+  .from-right {
+    transition: opacity 250ms ease-in, -webkit-transform 400ms ease-in;
+    transition: opacity 250ms ease-in, transform 400ms ease-in;
+    transition: opacity 250ms ease-in, transform 400ms ease-in,
+      -webkit-transform 400ms ease-in;
+    opacity: 0;
+  }
+  
+  .from-left.appear,
+  .from-right.appear {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .from-left {
+    grid-column: 2 / 3;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  } */
+
+  .bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+  
+  .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+  }
+  
+  .bg3 {
+    animation-duration:5s;
+  }
+  
+  /* .content {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+
+  } */
+  
+  h1 {
+    font-family:monospace;
+  }
+  
+  @keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }
+
+#main{
+    overflow: hidden;
+    /* position: relative; */
+    width: 100%;
+    min-height: 470px;
+    /* top: -96px; */
+    /* display: flex; */
+    /* align-items: center; */
+    flex: 1;
+}
+
+  
+/* CSS for sliderbar */
+#slidebar{
+    position: relative;
+    /* left: 12px; */
+    background:white;
+    display:none;  
+    z-index: 1000;
+    height:1030px;
+}
+
+.img-admin{
+    width: 100%;
+    border-radius: 50%;
+}
+
+.btn-menu{
+    position: absolute;
+    left: 0;
+    padding:10px;
+    border: none;
+    color: #fe7676;
+    background: #000;
+    cursor: pointer;
+}
+
+.nav{
+    display: inline;
+}
+
+.nav li button,
+.nav li a{
+    color: #fe7676;
+    text-decoration: none;
+    border-radius: 0;
+    transition: none;
+    font-size: 16px;
+    white-space: nowrap;
+    display: block;
+    position: relative;
+    padding: 15px 20px;
+    line-height: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 0px;
+    text-transform: capitalize;
+    transition: all 0.2s ease-in-out;
+}
+
+.nav li button{
+    border: none;
+    width: 100%;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.nav li button:hover{
+    background-color: #000
+}
+
+.nav .sub-nav{
+    display: none;
+}
+
+.nav .sub-nav li a {
+    padding-left: 50px;
+}
+
+.nav li a:hover{
+    background-color: #000
+}
+
+.div-info {
+    margin-top: 30px;
+    font-style: italic;
+}
+
+.div-info li{
+    margin-bottom:5px;
+}
+
+.back{
+    text-align: center;
+}
+
+.back-input{
+    padding: 7px 10px;
+    border: none;
+    cursor: pointer;
+    background: #fe7676;
+    transition: all 0.2s ease-in-out;
+}
+
+.back-input:hover{
+    color: #fe7676;
+    background: #000;
+}
+
+.div-btn-main .btn-main{
+    position: absolute;
+    /* right: 0px; */
+    padding: 10px;
+    border: none;
+    color: #fe7676;
+    background: #000;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.div-btn-main img{
+    width: fit-content;
+    position: absolute;
+}
+
+#content{
+    position: absolute;
+    top: 0;
+    overflow: hidden;   
+}
+
+.content {
+    text-align: center;
+}
+
+.people-see1,
+.people-see {
+    padding: 10px;
+    background: #ccc;
+    width: 400px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 30%);
+}
+
+.people-see{
+    margin-top: 50px;
+}
+
+.people-see1 h1,
+.people-see h1{
+    font-style: italic;
+    font-weight: 500;
+}
+
+.counter{
+    color: #fe7676;
+    font-size:20px;
+}
+
+.row-list{
+    justify-content: center;
+}
+
+/* CSS for responsive */
+@media (min-width:740px) and (max-width:1023px){
+    #main{
+        /* overflow-x: hidden;
+        overflow-y: hidden; */
+    }
+    #slidebar{
+        width: 220px;
+        height: 1123px;
+    }
+    #content{
+        overflow: hidden;   
+        width: 100%;
+    }
+    form {
+        padding: 9px;
+    }
+
+    .div-btn-main img{
+        display: none;
+    }
+    .people-see1,
+    .people-see{
+        width: 250px;
+    }
+    .back{
+        line-height: 121px;
+    }
+}
+
+@media (max-width:739px){
+    #slidebar{
+        width: 220px;
+        height: 1056px;
+    }    
+    .div-info li{
+        margin-bottom:10px;
+    }
+    .div-btn-main img{
+        display: none;
+    }
+    .people-see1{
+        margin-top:44px;
+    }
+}

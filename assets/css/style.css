@@ -1,4 +1,6 @@
 /* CSS for all */
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+
 *{
     margin: 0;
     padding: 0;
@@ -51,6 +53,11 @@ ul,li{
     transition: 0.7s;
 }
 
+.image1{
+    width: fit-content;
+    height: auto;
+}
+
 .image:hover{
     transform: scale(1.2);
 }
@@ -81,6 +88,7 @@ img{
     align-items: center;
     transition: all 0.5s linear;
 }
+
 .loader {
     background: #000;
     background: radial-gradient(#222, #000);
@@ -92,6 +100,7 @@ img{
     top: 0;
     z-index: 99999;
 }
+
 .loader-inner {
     bottom: 0;
     height: 60px;
@@ -102,6 +111,7 @@ img{
     top: 0;
     width: 100px;
 }
+
 .loader-line-wrap {
     animation: 
     spin 2000ms cubic-bezier(.175, .885, .32, 1.275) infinite
@@ -132,6 +142,7 @@ img{
 .loader-line-wrap:nth-child(3) { animation-delay: -150ms; }
 .loader-line-wrap:nth-child(4) { animation-delay: -200ms; }
 .loader-line-wrap:nth-child(5) { animation-delay: -250ms; }
+
 .loader-line-wrap:nth-child(1) .loader-line {
     border-color: hsl(0, 80%, 60%);
     height: 90px;
@@ -162,6 +173,7 @@ img{
     width: 34px;
     top: 35px;
 }
+
 @keyframes spin {
     0%, 15% {
     transform: rotate(0);
@@ -308,6 +320,8 @@ img{
     position: relative;
 }
 
+
+
 .menu3{
     opacity: 0;
     background-color: #fff;
@@ -328,6 +342,12 @@ img{
 .menu1>li>a{
     text-transform: uppercase;
 }
+
+/* @keyframes fadeIn{
+    form{opacity: 0;}
+    to{opacity: 1;}
+} */
+
 
 .menu1>li>a:hover{
     color:#fe7676;
@@ -702,7 +722,7 @@ img{
 
     /* CSS for Header */
     .content-header h1 a{
-        font-size: 35px;;
+        font-size:59px;
     }
 
     /* CSS for slider */
@@ -842,5 +862,36 @@ img{
     /* CSS for slider */
     .background-silder {
         top: 0;
+    }
+
+    /* CSS for content */
+    .first-content{
+        margin-top:60px;
+    }
+    .desc-content img{
+        text-align: center;
+        width: 100%;
+        height: auto;
+    }
+    .desc-content p{
+        margin-top:60px;
+    }
+
+    .desc-content{
+        overflow: hidden;
+    }
+
+    .desc-content .div-info-author{
+        top: -242px;
+    }
+
+    /* CSS for footer-item */
+    .item-footer{
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .item-footer a i{
+        font-size:25px;
     }
 }

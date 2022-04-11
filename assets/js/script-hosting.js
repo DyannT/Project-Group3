@@ -1035,3 +1035,367 @@ btnChange76.onclick = function handleSubmit() {
 	localStorage.setItem("content12Contact", $("#input-content-contact12").val());
 	$("#input-content-contact12").val("");
 }
+
+
+// Index
+// Change Img Silder
+document.querySelector("#inputSlider").addEventListener("change",function(){
+	const reader = new FileReader();
+	reader.addEventListener("load",function(){
+		localStorage.setItem("imageSilder",reader.result);
+	});
+	reader.readAsDataURL(this.files[0])
+});
+// Delete Img Silder
+document.querySelector(".btn-del-img1").onclick = function(){
+	localStorage.removeItem("imageSilder");
+}
+
+// Change Img Card1
+document.querySelector("#inputCard1").addEventListener("change",function(){
+	const reader = new FileReader();
+	reader.addEventListener("load",function(){
+		localStorage.setItem("imageCard1",reader.result);
+	});
+	reader.readAsDataURL(this.files[0])
+});
+// Delete Img Card1
+document.querySelector(".btn-del-img2").onclick = function(){
+	localStorage.removeItem("imageCard1");
+}
+
+// Change Img Card2
+document.querySelector("#inputCard2").addEventListener("change",function(){
+	const reader = new FileReader();
+	reader.addEventListener("load",function(){
+		localStorage.setItem("imageCard2",reader.result);
+	});
+	reader.readAsDataURL(this.files[0])
+});
+// Delete Img Card2
+document.querySelector(".btn-del-img3").onclick = function(){
+	localStorage.removeItem("imageCard2");
+}
+
+// Change Img Card3
+document.querySelector("#inputCard3").addEventListener("change",function(){
+	const reader = new FileReader();
+	reader.addEventListener("load",function(){
+		localStorage.setItem("imageCard3",reader.result);
+	});
+	reader.readAsDataURL(this.files[0])
+});
+// Delete Img Card3
+document.querySelector(".btn-del-img4").onclick = function(){
+	localStorage.removeItem("imageCard3");
+}
+
+// Change Img Author
+document.querySelector("#inputAuthor").addEventListener("change",function(){
+	const reader = new FileReader();
+	reader.addEventListener("load",function(){
+		localStorage.setItem("imageAuthor",reader.result);
+	});
+	reader.readAsDataURL(this.files[0])
+});
+// Delete Img Author
+document.querySelector(".btn-del-img5").onclick = function(){
+	localStorage.removeItem("imageAuthor");
+}
+
+// Change Img Author Signature
+document.querySelector("#inputAuthorSignature").addEventListener("change",function(){
+	const reader = new FileReader();
+	reader.addEventListener("load",function(){
+		localStorage.setItem("imageSignature",reader.result);
+	});
+	reader.readAsDataURL(this.files[0])
+});
+
+// Delete Img Author
+document.querySelector(".btn-del-img6").onclick = function(){
+	localStorage.removeItem("imageSignature");
+}
+
+
+// Change Img Picture of Book1
+document.querySelector("#inputPOB1").addEventListener("change",function(){
+	const reader = new FileReader();
+	reader.addEventListener("load",function(){
+		localStorage.setItem("imagePOB1",reader.result);
+	});
+	reader.readAsDataURL(this.files[0])
+});
+// Delete Img Picture of Book1
+document.querySelector(".btn-del-img7").onclick = function(){
+	localStorage.removeItem("imagePOB1");
+}
+
+// Change Img Picture of Book2
+document.querySelector("#inputPOB2").addEventListener("change",function(){
+	const reader = new FileReader();
+	reader.addEventListener("load",function(){
+		localStorage.setItem("imagePOB2",reader.result);
+	});
+	reader.readAsDataURL(this.files[0])
+});
+// Delete Img Picture of Book2
+document.querySelector(".btn-del-img8").onclick = function(){
+	localStorage.removeItem("imagePOB2");
+}
+
+// Change Img Picture of Book3
+document.querySelector("#inputPOB3").addEventListener("change",function(){
+	const reader = new FileReader();
+	reader.addEventListener("load",function(){
+		localStorage.setItem("imagePOB3",reader.result);
+	});
+	reader.readAsDataURL(this.files[0])
+});
+// Delete Img Picture of Book3
+document.querySelector(".btn-del-img9").onclick = function(){
+	localStorage.removeItem("imagePOB3");
+}
+
+// About
+// Change Img About1
+document.querySelector("#inputAbout1").addEventListener("change",function(){
+	const reader = new FileReader();
+	reader.addEventListener("load",function(){
+		localStorage.setItem("imageAbout1",reader.result);
+	});
+	reader.readAsDataURL(this.files[0])
+});
+// Delete Img About1
+document.querySelector(".btn-del-img10").onclick = function(){
+	localStorage.removeItem("imageAbout1");
+}
+
+// Change Img About2
+document.querySelector("#inputAbout2").addEventListener("change",function(){
+	const reader = new FileReader();
+	reader.addEventListener("load",function(){
+		localStorage.setItem("imageAbout2",reader.result);
+	});
+	reader.readAsDataURL(this.files[0])
+});
+// Delete Img About2
+document.querySelector(".btn-del-img11").onclick = function(){
+	localStorage.removeItem("imageAbout2");
+}
+
+
+// Blog
+// Change Img Blog1
+document.querySelector("#inputBlog1").addEventListener("change",function(){
+	const reader = new FileReader();
+	reader.addEventListener("load",function(){
+		localStorage.setItem("imageBlog1",reader.result);
+	});
+	reader.readAsDataURL(this.files[0])
+});
+// Delete Img Blog1
+document.querySelector(".btn-del-img12").onclick = function(){
+	localStorage.removeItem("imageBlog1");
+}
+
+// Change Img Blog2
+document.querySelector("#inputBlog2").addEventListener("change",function(){
+	const reader = new FileReader();
+	reader.addEventListener("load",function(){
+		localStorage.setItem("imageBlog2",reader.result);
+	});
+	reader.readAsDataURL(this.files[0])
+});
+// Delete Img Blog2
+document.querySelector(".btn-del-img13").onclick = function(){
+	localStorage.removeItem("imageBlog2");
+}
+
+// Change Img Blog3
+document.querySelector("#inputBlog3").addEventListener("change",function(){
+	const reader = new FileReader();
+	reader.addEventListener("load",function(){
+		localStorage.setItem("imageBlog3",reader.result);
+	});
+	reader.readAsDataURL(this.files[0])
+});
+// Delete Img Blog3
+document.querySelector(".btn-del-img14").onclick = function(){
+	localStorage.removeItem("imageBlog3");
+}
+
+// Change Img Blog4
+document.querySelector("#inputBlog4").addEventListener("change",function(){
+	const reader = new FileReader();
+	reader.addEventListener("load",function(){
+		localStorage.setItem("imageBlog4",reader.result);
+	});
+	reader.readAsDataURL(this.files[0])
+});
+// Delete Img Blog4
+document.querySelector(".btn-del-img15").onclick = function(){
+	localStorage.removeItem("imageBlog4");
+}
+
+// Change Img Blog5
+document.querySelector("#inputBlog5").addEventListener("change",function(){
+	const reader = new FileReader();
+	reader.addEventListener("load",function(){
+		localStorage.setItem("imageBlog5",reader.result);
+	});
+	reader.readAsDataURL(this.files[0])
+});
+// Delete Img Blog5
+document.querySelector(".btn-del-img16").onclick = function(){
+	localStorage.removeItem("imageBlog5");
+}
+
+// Change Img Blog6
+document.querySelector("#inputBlog6").addEventListener("change",function(){
+	const reader = new FileReader();
+	reader.addEventListener("load",function(){
+		localStorage.setItem("imageBlog6",reader.result);
+	});
+	reader.readAsDataURL(this.files[0])
+});
+// Delete Img Blog6
+document.querySelector(".btn-del-img17").onclick = function(){
+	localStorage.removeItem("imageBlog6");
+}
+
+
+
+
+// Por
+// Change Img Por1
+document.querySelector("#inputPor1").addEventListener("change",function(){
+	const reader = new FileReader();
+	reader.addEventListener("load",function(){
+		localStorage.setItem("imagePor1",reader.result);
+	});
+	reader.readAsDataURL(this.files[0])
+});
+// Delete Img Por1
+document.querySelector(".btn-del-img18").onclick = function(){
+	localStorage.removeItem("imagePor1");
+}
+
+// Change Img Por2
+document.querySelector("#inputPor2").addEventListener("change",function(){
+	const reader = new FileReader();
+	reader.addEventListener("load",function(){
+		localStorage.setItem("imagePor2",reader.result);
+	});
+	reader.readAsDataURL(this.files[0])
+});
+// Delete Img Por2
+document.querySelector(".btn-del-img19").onclick = function(){
+	localStorage.removeItem("imagePor2");
+}
+
+// Change Img Por3
+document.querySelector("#inputPor3").addEventListener("change",function(){
+	const reader = new FileReader();
+	reader.addEventListener("load",function(){
+		localStorage.setItem("imagePor3",reader.result);
+	});
+	reader.readAsDataURL(this.files[0])
+});
+// Delete Img Por3
+document.querySelector(".btn-del-img20").onclick = function(){
+	localStorage.removeItem("imagePor3");
+}
+
+// Change Img Por4
+document.querySelector("#inputPor4").addEventListener("change",function(){
+	const reader = new FileReader();
+	reader.addEventListener("load",function(){
+		localStorage.setItem("imagePor4",reader.result);
+	});
+	reader.readAsDataURL(this.files[0])
+});
+// Delete Img Por4
+document.querySelector(".btn-del-img21").onclick = function(){
+	localStorage.removeItem("imagePor4");
+}
+
+// Change Img Por5
+document.querySelector("#inputPor5").addEventListener("change",function(){
+	const reader = new FileReader();
+	reader.addEventListener("load",function(){
+		localStorage.setItem("imagePor5",reader.result);
+	});
+	reader.readAsDataURL(this.files[0])
+});
+// Delete Img Por5
+document.querySelector(".btn-del-img22").onclick = function(){
+	localStorage.removeItem("imagePor5");
+}
+
+
+// History
+// Change Img History1
+document.querySelector("#inputHistory1").addEventListener("change",function(){
+	const reader = new FileReader();
+	reader.addEventListener("load",function(){
+		localStorage.setItem("imageHistory1",reader.result);
+	});
+	reader.readAsDataURL(this.files[0])
+});
+// Delete Img History1
+document.querySelector(".btn-del-img23").onclick = function(){
+	localStorage.removeItem("imageHistory1");
+}
+
+// Change Img History2
+document.querySelector("#inputHistory2").addEventListener("change",function(){
+	const reader = new FileReader();
+	reader.addEventListener("load",function(){
+		localStorage.setItem("imageHistory2",reader.result);
+	});
+	reader.readAsDataURL(this.files[0])
+});
+// Delete Img History2
+document.querySelector(".btn-del-img24").onclick = function(){
+	localStorage.removeItem("imageHistory2");
+}
+
+// Change Img History3
+document.querySelector("#inputHistory3").addEventListener("change",function(){
+	const reader = new FileReader();
+	reader.addEventListener("load",function(){
+		localStorage.setItem("imageHistory3",reader.result);
+	});
+	reader.readAsDataURL(this.files[0])
+});
+// Delete Img History3
+document.querySelector(".btn-del-img25").onclick = function(){
+	localStorage.removeItem("imageHistory3");
+}
+
+// Change Img History4
+document.querySelector("#inputHistory4").addEventListener("change",function(){
+	const reader = new FileReader();
+	reader.addEventListener("load",function(){
+		localStorage.setItem("imageHistory4",reader.result);
+	});
+	reader.readAsDataURL(this.files[0])
+});
+// Delete Img History4
+document.querySelector(".btn-del-img26").onclick = function(){
+	localStorage.removeItem("imageHistory4");
+}
+
+// Change Img History5
+document.querySelector("#inputHistory5").addEventListener("change",function(){
+	const reader = new FileReader();
+	reader.addEventListener("load",function(){
+		localStorage.setItem("imageHistory5",reader.result);
+	});
+	reader.readAsDataURL(this.files[0])
+});
+// Delete Img History5
+document.querySelector(".btn-del-img27").onclick = function(){
+	localStorage.removeItem("imageHistory5");
+}

@@ -362,7 +362,7 @@ body{
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     background: url(../img/zoom-portfolio.png) 50% 50% no-repeat;
-    z-index: 2;
+    z-index: 1;
     opacity: 0;
 }
 

@@ -38,36 +38,38 @@ imgClose.onclick = function () {
 
 
 function sliderImg(i) {
-    imgLeft.onclick = function () {
-        if (i === 2) {
-            --i;
-            imgOpen.src = `./assets/img/portfolio-pic${i}.jpg`;
-            // console.log(i)
+    do {
+        imgLeft.onclick = function () {
+            if (i === 2) {
+                --i;
+                imgOpen.src = `./assets/img/portfolio-pic${1}.jpg`;
+                console.log(i)
+            }
+            else if(i>2){
+                --i;
+                imgOpen.src = `./assets/img/portfolio-pic${i}.jpg`;
+                console.log(i)
+            }
         }
-        else if (i > 2) {
-            --i;
-            imgOpen.src = `./assets/img/portfolio-pic${i}.jpg`;
-            // console.log(i)
-        }
-    }
-    imgRight.onclick = function () {
-        if (i === 5) {
-            imgOpen.src = `./assets/img/portfolio-pic${openPic.length}.jpg`;
-            // console.log(i)
-        }
+        imgRight.onclick = function () {
+            if (i === 5) {
+                imgOpen.src = `./assets/img/portfolio-pic${openPic.length}.jpg`;
+                console.log(i)
+            }
 
-        // else if (i === 2) {
-        //     ++i;
-        //     imgOpen.src = `./assets/img/portfolio-pic${i}.jpg`;
-        //     console.log(i)
-        // }
+            // else if (i === 2) {
+            //     ++i;
+            //     imgOpen.src = `./assets/img/portfolio-pic${i}.jpg`;
+            //     console.log(i)
+            // }
 
-        else if (i < 5) {
+            else if(i<5){
             ++i;
             imgOpen.src = `./assets/img/portfolio-pic${i}.jpg`;
-            // console.log(i)
+            console.log(i)
         }
-    }
-    // console.log(i)
+        }
+        // console.log(i)
+    } while (i < 0)
 }
 

@@ -461,8 +461,9 @@ header {
     width: 100%;height: auto;
 }
 
-.card-info {
-    margin-top: 40px;
+.author-inspiration img,
+.author-inspiration .text-author-inspiration1{
+    margin-top:40px;
 }
 
 .author-inspiration .text-author-inspiration1{

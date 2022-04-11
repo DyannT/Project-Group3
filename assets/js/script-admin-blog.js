@@ -23,3 +23,23 @@ localStorage.getItem("content4Blog") && $(".txt-recent-posts1").html(`${localSto
 localStorage.getItem("content5Blog") && $(".txt-recent-posts2").html(`${localStorage.getItem("content5Blog")}`)
 
 localStorage.getItem("content6Blog") && $(".txt-recent-posts3").html(`${localStorage.getItem("content6Blog")}`)
+
+
+// Img
+// Blog1   
+localStorage.getItem("imageBlog1") && $('.img-blog1').attr("src",`${localStorage.getItem("imageBlog1")}`)
+
+// Blog2  
+localStorage.getItem("imageBlog2") && $('.img-blog2').attr("src",`${localStorage.getItem("imageBlog2")}`)
+
+// Blog3  
+localStorage.getItem("imageBlog3") && $('.img-blog3').attr("src",`${localStorage.getItem("imageBlog3")}`)
+
+// Blog4   
+localStorage.getItem("imageBlog4") && $('.img-blog4').attr("src",`${localStorage.getItem("imageBlog4")}`)
+
+// Blog5  
+localStorage.getItem("imageBlog5") && $('.img-blog5').attr("src",`${localStorage.getItem("imageBlog5")}`)
+
+// Blog6 
+localStorage.getItem("imageBlog6") && $('.img-blog6').attr("src",`${localStorage.getItem("imageBlog6")}`)

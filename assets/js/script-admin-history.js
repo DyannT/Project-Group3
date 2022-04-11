@@ -33,3 +33,20 @@ localStorage.getItem("content16History") && $(".list-content11").html(`${localSt
 localStorage.getItem("content17History") && $(".list-content12").html(`${localStorage.getItem("content17History")}`)
 
 localStorage.getItem("content18History") && $(".txt-poster").html(`${localStorage.getItem("content18History")}`)
+
+
+// Img
+// History1   
+localStorage.getItem("imageHistory1") && $('.pic-history1').attr("src",`${localStorage.getItem("imageHistory1")}`)
+
+// History2  
+localStorage.getItem("imageHistory2") && $('.pic-history2').attr("src",`${localStorage.getItem("imageHistory2")}`)
+
+// History3   
+localStorage.getItem("imageHistory3") && $('.pic-history3').attr("src",`${localStorage.getItem("imageHistory3")}`)
+
+// History4   
+localStorage.getItem("imageHistory4") && $('.pic-history4').attr("src",`${localStorage.getItem("imageHistory4")}`)
+
+// History5   
+localStorage.getItem("imageHistory5") && $('.pic-history5').attr("src",`${localStorage.getItem("imageHistory5")}`)

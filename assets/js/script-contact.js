@@ -1,6 +1,6 @@
 const clearForm = document.querySelector('.js-btn-clear')
 const inputForms = document.querySelectorAll('.js-input-form')
-console.log(inputForms)
+// console.log(sendForms)
 
 // function clearInput(){
 //     for(let inputForm of inputForms){

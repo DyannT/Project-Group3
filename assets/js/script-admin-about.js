@@ -27,3 +27,9 @@ localStorage.getItem("content13About") && $(".list-5").html(`${localStorage.getI
 localStorage.getItem("content14About") && $(".list-6").html(`${localStorage.getItem("content14About")}`)
 
 
+// Img
+// About1   
+localStorage.getItem("imageAbout1") && $('.img-about1').attr("src",`${localStorage.getItem("imageAbout1")}`)
+
+// About2
+localStorage.getItem("imageAbout2") && $('.img-about2').attr("src",`${localStorage.getItem("imageAbout2")}`)
