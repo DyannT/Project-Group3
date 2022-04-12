@@ -154,32 +154,28 @@ createAcc.onclick = function (e) {
 
   // Cách 2 lưu qua localStorage của web khi refresh sẽ k mất như k tạo đc nhiều acc và chỉ dùng đc ở web của ng dùng
   // console.log(typeof $(".create-user-form").val());
-  localStorage.setItem("username",$(".create-user-form").val());
-  localStorage.setItem("password",$(".create-password-form").val());
 
-
-  var userInput = localStorage.getItem("username",$(".create-user-form").val())
-  var pwdInput = localStorage.getItem("password",$(".create-password-form").val())
-
+  var userInput = $(".create-user-form").val();
+  var pwdInput = $(".create-password-form").val();
 
   var user1 = new createData(userInput,pwdInput)
   // console.log(user1)
   if(checkCreate(user1.username,user1.password) && user1.username !== '' && user1.password !== ''){
     isRegister = true;
     data.push(user1);
-    // console.log(data)
+    localStorage.setItem("username",userInput);
+    localStorage.setItem("password",pwdInput);
     actionCreate(e)
   }
 
   else if(user1.username === '' && user1.password === ''){
-    alert('Please enter a username or password befor register!!')
+    alert('Điền tài khoản hoặc mật khẩu trước khi đăng ký')
   }
 
   else{
-    alert("username or password Exist !!!")
+    alert("Tài khoản hoặc mật khẩu bị trùng")
     e.preventDefault()
   }
-  console.log(data)
 
 }
 
@@ -230,6 +226,7 @@ var localP = localStorage.getItem("password",$(".create-password-form").val())
 
 
 // // Check Login
+var loggedCreate = false;
 var loggedIn = false;
 var loggedIn1 = false;
 var loggedIn2 = false;
@@ -247,12 +244,15 @@ loginAdmin.onclick = function (e) {
     if(token === 0){
       loggedIn = true;
     }
-    if(token === 1){
+    else if(token === 1){
       loggedIn1 = true;
     }
-    if(token === 2){
+    else if(token === 2){
       loggedIn2 = true;
     }
+    else{
+      isRegister = true;
+      loggedCreate = true}
   }
   // console.log(e)
   check(e);
@@ -278,7 +278,7 @@ function checkLogin(username,password) {
 }
 
 function check(e) {
-  if(isRegister && loggedIn){
+  if(isRegister && loggedCreate){
     alert('Đăng nhập thành công!!');
     formLogin.action = 'hosting-create.html'
   }
@@ -300,6 +300,8 @@ function check(e) {
 
   else {
     alert('Sai tài khoản hoặc mật khẩu!!!');
+    console.log(loggedCreate)
+    console.log(isRegister)
     e.preventDefault()
 }}
 
@@ -310,7 +312,6 @@ function check(e) {
 backbtn.onclick = function () {
   history.back()
 };
-
 
 
 

@@ -27,6 +27,9 @@ body{
 html{
     overflow-x: hidden;
     height:100%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior:smooth;
 }
 
 .fade-in {
@@ -270,11 +273,11 @@ button.btn-change {
     margin-bottom:5px;
 }
 
-.back{
+.logout{
     text-align: center;
 }
 
-.back-input{
+.back{
     padding: 7px 10px;
     border: none;
     cursor: pointer;
@@ -282,7 +285,7 @@ button.btn-change {
     transition: all 0.2s ease-in-out;
 }
 
-.back-input:hover{
+.back:hover{
     color: #fe7676;
     background: #000;
 }

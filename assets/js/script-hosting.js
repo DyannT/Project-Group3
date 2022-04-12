@@ -1,8 +1,22 @@
-const backbtn = document.querySelector('.back-input')
-backbtn.onclick = function(){
-    history.back()
-};
+// logout
+function logoutCreate() {
+    // localStorage.removeItem("tokenCreate")
+    window.location.replace(`file:///D:/Project-Group3/login.html`)
+} 
+function logout1() {
+    // localStorage.removeItem("token1")
+    window.location.replace(`file:///D:/Project-Group3/login.html`)
+} 
 
+function logout2() {
+    // localStorage.removeItem("token2")
+    window.location.replace(`file:///D:/Project-Group3/login.html`)
+} 
+
+function logout3() {
+    // localStorage.removeItem("token3")
+    window.location.replace(`file:///D:/Project-Group3/login.html`)
+} 
 
 
 
@@ -1051,6 +1065,7 @@ document.querySelector(".btn-del-img1").onclick = function(){
 	localStorage.removeItem("imageSilder");
 }
 
+
 // Change Img Card1
 document.querySelector("#inputCard1").addEventListener("change",function(){
 	const reader = new FileReader();
@@ -1063,6 +1078,7 @@ document.querySelector("#inputCard1").addEventListener("change",function(){
 document.querySelector(".btn-del-img2").onclick = function(){
 	localStorage.removeItem("imageCard1");
 }
+
 
 // Change Img Card2
 document.querySelector("#inputCard2").addEventListener("change",function(){
@@ -1077,6 +1093,7 @@ document.querySelector(".btn-del-img3").onclick = function(){
 	localStorage.removeItem("imageCard2");
 }
 
+
 // Change Img Card3
 document.querySelector("#inputCard3").addEventListener("change",function(){
 	const reader = new FileReader();
@@ -1089,6 +1106,7 @@ document.querySelector("#inputCard3").addEventListener("change",function(){
 document.querySelector(".btn-del-img4").onclick = function(){
 	localStorage.removeItem("imageCard3");
 }
+
 
 // Change Img Author
 document.querySelector("#inputAuthor").addEventListener("change",function(){
@@ -1103,6 +1121,7 @@ document.querySelector(".btn-del-img5").onclick = function(){
 	localStorage.removeItem("imageAuthor");
 }
 
+
 // Change Img Author Signature
 document.querySelector("#inputAuthorSignature").addEventListener("change",function(){
 	const reader = new FileReader();
@@ -1114,7 +1133,8 @@ document.querySelector("#inputAuthorSignature").addEventListener("change",functi
 
 // Delete Img Author
 document.querySelector(".btn-del-img6").onclick = function(){
-	localStorage.removeItem("imageSignature");
+	localStorage.removeItem("imageSignature")
+	;
 }
 
 
@@ -1131,6 +1151,7 @@ document.querySelector(".btn-del-img7").onclick = function(){
 	localStorage.removeItem("imagePOB1");
 }
 
+
 // Change Img Picture of Book2
 document.querySelector("#inputPOB2").addEventListener("change",function(){
 	const reader = new FileReader();
@@ -1144,6 +1165,7 @@ document.querySelector(".btn-del-img8").onclick = function(){
 	localStorage.removeItem("imagePOB2");
 }
 
+
 // Change Img Picture of Book3
 document.querySelector("#inputPOB3").addEventListener("change",function(){
 	const reader = new FileReader();
@@ -1156,6 +1178,7 @@ document.querySelector("#inputPOB3").addEventListener("change",function(){
 document.querySelector(".btn-del-img9").onclick = function(){
 	localStorage.removeItem("imagePOB3");
 }
+
 
 // About
 // Change Img About1
@@ -1171,6 +1194,7 @@ document.querySelector(".btn-del-img10").onclick = function(){
 	localStorage.removeItem("imageAbout1");
 }
 
+
 // Change Img About2
 document.querySelector("#inputAbout2").addEventListener("change",function(){
 	const reader = new FileReader();
@@ -1183,6 +1207,7 @@ document.querySelector("#inputAbout2").addEventListener("change",function(){
 document.querySelector(".btn-del-img11").onclick = function(){
 	localStorage.removeItem("imageAbout2");
 }
+
 
 
 // Blog
@@ -1199,6 +1224,7 @@ document.querySelector(".btn-del-img12").onclick = function(){
 	localStorage.removeItem("imageBlog1");
 }
 
+
 // Change Img Blog2
 document.querySelector("#inputBlog2").addEventListener("change",function(){
 	const reader = new FileReader();
@@ -1211,6 +1237,7 @@ document.querySelector("#inputBlog2").addEventListener("change",function(){
 document.querySelector(".btn-del-img13").onclick = function(){
 	localStorage.removeItem("imageBlog2");
 }
+
 
 // Change Img Blog3
 document.querySelector("#inputBlog3").addEventListener("change",function(){
@@ -1225,6 +1252,7 @@ document.querySelector(".btn-del-img14").onclick = function(){
 	localStorage.removeItem("imageBlog3");
 }
 
+
 // Change Img Blog4
 document.querySelector("#inputBlog4").addEventListener("change",function(){
 	const reader = new FileReader();
@@ -1237,6 +1265,7 @@ document.querySelector("#inputBlog4").addEventListener("change",function(){
 document.querySelector(".btn-del-img15").onclick = function(){
 	localStorage.removeItem("imageBlog4");
 }
+
 
 // Change Img Blog5
 document.querySelector("#inputBlog5").addEventListener("change",function(){
@@ -1251,6 +1280,7 @@ document.querySelector(".btn-del-img16").onclick = function(){
 	localStorage.removeItem("imageBlog5");
 }
 
+
 // Change Img Blog6
 document.querySelector("#inputBlog6").addEventListener("change",function(){
 	const reader = new FileReader();
@@ -1263,6 +1293,7 @@ document.querySelector("#inputBlog6").addEventListener("change",function(){
 document.querySelector(".btn-del-img17").onclick = function(){
 	localStorage.removeItem("imageBlog6");
 }
+
 
 
 
@@ -1281,6 +1312,7 @@ document.querySelector(".btn-del-img18").onclick = function(){
 	localStorage.removeItem("imagePor1");
 }
 
+
 // Change Img Por2
 document.querySelector("#inputPor2").addEventListener("change",function(){
 	const reader = new FileReader();
@@ -1293,6 +1325,7 @@ document.querySelector("#inputPor2").addEventListener("change",function(){
 document.querySelector(".btn-del-img19").onclick = function(){
 	localStorage.removeItem("imagePor2");
 }
+
 
 // Change Img Por3
 document.querySelector("#inputPor3").addEventListener("change",function(){
@@ -1307,6 +1340,7 @@ document.querySelector(".btn-del-img20").onclick = function(){
 	localStorage.removeItem("imagePor3");
 }
 
+
 // Change Img Por4
 document.querySelector("#inputPor4").addEventListener("change",function(){
 	const reader = new FileReader();
@@ -1319,6 +1353,7 @@ document.querySelector("#inputPor4").addEventListener("change",function(){
 document.querySelector(".btn-del-img21").onclick = function(){
 	localStorage.removeItem("imagePor4");
 }
+
 
 // Change Img Por5
 document.querySelector("#inputPor5").addEventListener("change",function(){
@@ -1334,6 +1369,7 @@ document.querySelector(".btn-del-img22").onclick = function(){
 }
 
 
+
 // History
 // Change Img History1
 document.querySelector("#inputHistory1").addEventListener("change",function(){
@@ -1346,6 +1382,7 @@ document.querySelector("#inputHistory1").addEventListener("change",function(){
 // Delete Img History1
 document.querySelector(".btn-del-img23").onclick = function(){
 	localStorage.removeItem("imageHistory1");
+	
 }
 
 // Change Img History2
@@ -1359,6 +1396,7 @@ document.querySelector("#inputHistory2").addEventListener("change",function(){
 // Delete Img History2
 document.querySelector(".btn-del-img24").onclick = function(){
 	localStorage.removeItem("imageHistory2");
+	
 }
 
 // Change Img History3
@@ -1372,6 +1410,7 @@ document.querySelector("#inputHistory3").addEventListener("change",function(){
 // Delete Img History3
 document.querySelector(".btn-del-img25").onclick = function(){
 	localStorage.removeItem("imageHistory3");
+	
 }
 
 // Change Img History4
@@ -1385,6 +1424,7 @@ document.querySelector("#inputHistory4").addEventListener("change",function(){
 // Delete Img History4
 document.querySelector(".btn-del-img26").onclick = function(){
 	localStorage.removeItem("imageHistory4");
+	
 }
 
 // Change Img History5
@@ -1398,4 +1438,5 @@ document.querySelector("#inputHistory5").addEventListener("change",function(){
 // Delete Img History5
 document.querySelector(".btn-del-img27").onclick = function(){
 	localStorage.removeItem("imageHistory5");
+	
 }
