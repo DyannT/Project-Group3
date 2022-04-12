@@ -255,7 +255,7 @@ body{
 .card-history {
     display:flex;
     margin-top: 50px;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 .card-content-history{
     margin-left: 19px;
