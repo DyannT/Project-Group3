@@ -1,11 +1,12 @@
 /* CSS for all */
+@import url(https://fonts.googleapis.com/css?family=PT+Sans);
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* CSS for scroll */
 ::-moz-selection { /* Code for Firefox */
     color: #fe7676;
     background: #ddd;
@@ -33,10 +34,9 @@
     background: #fff; 
 }  
 
-/* CSS for ALL */
 a{
     text-decoration: none;
-    font-size:16px;
+    font-size:16px ;
 }
 
 html{
@@ -45,7 +45,26 @@ html{
 
 ul,li{
     list-style: none;
-} 
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+    transition: 0.7s;
+}
+
+.image1{
+    width: fit-content;
+    height: auto;
+}
+
+.image:hover{
+    transform: scale(1.2);
+}
+
+.clear{
+    clear: both;
+}
 
 body{
     overflow-x: hidden;
@@ -55,6 +74,141 @@ body{
 img{
     border-radius: 5px;
 }
+
+/* CSS for loading */
+/* /* .loading{ 
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.3);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s linear;
+}
+
+.loader {
+    background: #000;
+    background: radial-gradient(#222, #000);
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+}
+
+.loader-inner {
+    bottom: 0;
+    height: 60px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+}
+
+.loader-line-wrap {
+    animation: 
+    spin 2000ms cubic-bezier(.175, .885, .32, 1.275) infinite
+  ;
+    box-sizing: border-box;
+    height: 50px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    transform-origin: 50% 100%;
+    width: 100px;
+}
+.loader-line {
+    border: 4px solid transparent;
+    border-radius: 100%;
+    box-sizing: border-box;
+    height: 100px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+}
+.loader-line-wrap:nth-child(1) { animation-delay: -50ms; }
+.loader-line-wrap:nth-child(2) { animation-delay: -100ms; }
+.loader-line-wrap:nth-child(3) { animation-delay: -150ms; }
+.loader-line-wrap:nth-child(4) { animation-delay: -200ms; }
+.loader-line-wrap:nth-child(5) { animation-delay: -250ms; }
+
+.loader-line-wrap:nth-child(1) .loader-line {
+    border-color: hsl(0, 80%, 60%);
+    height: 90px;
+    width: 90px;
+    top: 7px;
+}
+.loader-line-wrap:nth-child(2) .loader-line {
+    border-color: hsl(60, 80%, 60%);
+    height: 76px;
+    width: 76px;
+    top: 14px;
+}
+.loader-line-wrap:nth-child(3) .loader-line {
+    border-color: hsl(120, 80%, 60%);
+    height: 62px;
+    width: 62px;
+    top: 21px;
+}
+.loader-line-wrap:nth-child(4) .loader-line {
+    border-color: hsl(180, 80%, 60%);
+    height: 48px;
+    width: 48px;
+    top: 28px;
+}
+.loader-line-wrap:nth-child(5) .loader-line {
+    border-color: hsl(240, 80%, 60%);
+    height: 34px;
+    width: 34px;
+    top: 35px;
+}
+
+@keyframes spin {
+    0%, 15% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} */
+
+/* header {
+    --text: #f4f4f4;
+    --text-inverse: #333;
+    --background: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em 3em;
+    transition: background 250ms ease-in;
+    background: var(--background);
+    color: var(--text);
+  } */
+
+/* .home-intro {
+    padding: 50vh 0;
+    background: #123 url(https://unsplash.it/900);
+    background-size: cover;
+    background-blend-mode: multiply;
+    color: white;
+    text-align: center;
+} */
 
 .fade-in {
     opacity: 0;
@@ -102,7 +256,6 @@ img{
 
 /* CSS for header */
 #header{
-    text-align: center;
     width: 100%;
     height: 295px;
     background-color: #fe7676;
@@ -110,9 +263,9 @@ img{
 }
 
 .content-header{
-    /* text-align: center; */
+    text-align: center;
     height: 265px;
-    display: flex;  
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -147,9 +300,9 @@ img{
     min-height: 60px;
 }
 
-/* #menu{
+#menu{
     line-height:60px;
-} */
+}
 
 .menu1{
     display:flex;
@@ -157,7 +310,7 @@ img{
 }
 
 .menu2{
-    opacity:0;
+    opacity: 0;
     width: 131px;
     z-index: 99;
     background: #fe7676;
@@ -166,6 +319,8 @@ img{
     transition:all 0.2s ease-in-out;
     position: relative;
 }
+
+
 
 .menu3{
     opacity: 0;
@@ -188,42 +343,555 @@ img{
     text-transform: uppercase;
 }
 
-/* .menu1>li>a:hover{
-    color:#fe7676;
+/* @keyframes fadeIn{
+    form{opacity: 0;}
+    to{opacity: 1;}
 } */
 
-/* .menu2>li>a{
+
+.menu1>li>a:hover{
+    color:#fe7676;
+}
+
+.menu2>li>a{
     display: block;
     color: #fff;
     font: 12px/14px "Open Sans", Georgia, sans-serif;
     padding: 3px 0;
     text-indent: 26px;
     margin: 0;
-} */
+}
 
-/* .menu2>li>a:hover{
+.menu2>li>a:hover{
     background-color: #fff;
     color: #fe7676;
-} */
-/* 
+}
+
 #menu .menu1 li:hover .menu2{
     opacity: 1;
-} */
+}
 
-/* .menu3>li>a{
+.menu3>li>a{
     display: block;
     color: #000;
     font: 12px/14px "Open Sans", Georgia, sans-serif;
     padding: 3px 0;
     text-indent: 26px;
     margin: 0;
-} */
+}
 
-/* .menu3 li a:hover{
+.menu3 li a:hover{
     background-color: #fe7676;
     color: #fff;
-} */
+}
 
-/* #menu .menu1  .menu2 li:hover .menu3{
+#menu .menu1  .menu2 li:hover .menu3{
     opacity: 1;
-} */
+}
+
+/* CSS for slider */
+
+.background-silder{
+    position: relative;
+    width: 100%;
+    min-height: 470px;
+    background: url(https://livedemo00.template-help.com/wt_47955/images/bg_1.jpg) 50% 0 repeat-x;
+    top: -96px;
+    display: flex;
+    align-items: center;
+}
+
+/* CSS for btn nav */
+.btn-taskbar-mobile{
+    color: #fe7676;
+    padding:5px;
+    background-color: #ccc;
+    
+}
+
+/* CSS for slider */
+.slier-item{
+    align-items: center;
+}
+
+.slier-item .txt2{
+    font: 48px/57px 'Playball', Arial, sans-serif;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    font-style: italic;
+}
+
+/* CSS for content */
+#content {
+    padding-bottom:60px;
+}
+
+.background-content{
+    width: 100%;height: fit-content;
+}
+
+.first-content{
+    text-align: center;
+}
+
+.first-content h2{
+    font-weight:400;
+    font: 48px/50px 'Playball', Arial, sans-serif;
+    color: #000;
+    margin-bottom: 42px;
+    font-style: italic;
+}
+
+.first-content p{
+    font: 18px/30px 'Open Sans', Arial, sans-serif;
+    color: #6f6f6f;
+    margin-top: 21px;
+    font-style: justify;
+}
+
+.content-btn {
+    display: inline-block;
+    color: #fff;
+    background: #fe7676;
+    font: 12px/20px "Open Sans", Arial, Helvetica, sans-serif;
+    margin-top: 36px;
+    text-transform: uppercase;
+    padding: 9px 15px 8px;
+    transition: all 0.2s ease-in-out;
+    border-radius:5px!important;
+}
+
+.content-btn:hover {
+    background: #000;
+    color: #fe7676;
+    border-radius:5px!important;
+}
+
+
+/* CSS for 2nd content */
+.card-content {
+    background: #fff;
+    margin-top: 60px;
+    text-align: center;
+    padding: 60px 27px;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.2s linear;
+}
+
+.card-content:hover{
+    transform:scale(0.9);
+}
+
+.card-content h4{
+    font: 20px/24px 'Open Sans', Arial, sans-serif;
+    color: #646464;
+    margin-top: 18px;
+    letter-spacing: 1px;
+}
+
+.card-content p{
+    margin-top: 13px;
+    font: 14px/16px 'Open Sans', Arial, sans-serif;
+    color: #646464;
+}
+
+.card-content .btn-card-content{
+    display: inline-block;
+    color: #fff;
+    background: #fe7676;
+    font: 12px/20px "Open Sans", Arial, Helvetica, sans-serif;
+    margin-top: 36px;
+    text-transform: uppercase;
+    padding: 7px 24px 5px;
+    transition: all 0.2s ease-in-out;
+    border-radius:5px!important;
+}
+
+.card-content .btn-card-content:hover{
+    background: #000;
+    color: #fe7676;
+}
+
+/* CSS for 3th */
+.author-say{
+    width: fit-content;
+    margin: 65px auto;
+}
+
+.author-say h3{
+    font: 24px/30px 'Open Sans', Arial, sans-serif;
+    color: #5f5f5f;
+    text-transform: uppercase;
+}
+
+.desc-content{
+    position: relative;
+}
+
+.desc-content p{
+    font: 18px/30px 'Open Sans', Arial, sans-serif;
+    color: #6f6f6f;
+}
+
+.desc-content .div-info-author{
+    position: relative;
+    /* position: absolute; */
+    text-align: center;
+    margin: 0 auto;
+    top: -145px;
+    display: none;
+    transition: all 0.2s ease-in-out;
+}
+
+
+.desc-content .info-author li{
+    font-size: 15px;
+    color: #000;
+}
+
+.desc-content:hover img{
+    opacity: 0.9;
+}
+
+.image-author{
+    text-align: center;
+}
+
+.desc-content:hover .div-info-author{
+    display:block;
+}
+
+.signature{
+    display:flex;
+    align-items: flex-end;
+}
+
+.signature p{
+    font: 30px/30px 'Playball', Arial, sans-serif;
+    color: #272727;
+    margin-top: 25px;
+    float: left;
+    margin-right: 36px;
+}
+
+.signature img{
+    width: auto;
+    position: relative;
+    top: 15px;
+}
+
+/* CSS for 4th */
+.desc-pic{
+    text-align: center;
+    margin-top:65px;
+}
+
+.desc-pic h3{
+    font: 24px/30px 'Open Sans', Arial, sans-serif;
+    color: #5f5f5f;
+    text-transform: uppercase;
+}
+
+.desc-pic-img{
+    margin-top:65px;
+    overflow:hidden;
+}
+
+.desc-pic-img img{
+    width: 100%;height: auto;
+}
+
+.more-4th-content{
+    text-align:center;
+}
+
+.btn-4th-content{
+    display: inline-block;
+    color: #fff;
+    background: #fe7676;
+    font: 12px/20px "Open Sans", Arial, Helvetica, sans-serif;
+    margin-top: 36px;
+    text-transform: uppercase;
+    padding: 9px 17px 8px; 
+    border-radius:5px!important;     
+}
+
+.btn-4th-content:hover {
+    background-color: #000;
+    color: #fe7676;
+}
+
+/* CSS for footer */
+#footer {
+    background-color: #fe7676;
+}
+
+.header-text-footer{
+    padding-top: 44px;
+    /* padding-bottom: 70px; */
+}
+
+.body-text-footer {
+    text-align: center;
+}
+
+.body-text-footer p{
+    font: 18px/30px "Open Sans", Arial, sans-serif;
+    color: #fff;
+    margin-top: 24px;
+}
+
+.header-text-footer p{
+    text-align: center;
+    font: 24px/24px "Open Sans", Arial, sans-serif;
+    color: #fff;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.item-footer {
+    text-align: center;
+    margin-top: 40px;
+    padding-bottom: 44px;
+}
+
+.item-footer a i{
+    color: #fff;
+    font-size: 40px;
+    margin:0 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+.item-footer a:hover i{
+    color: #482222;
+}
+
+/* CSS for footer-desc */
+.text-desc {
+    text-align: center;
+    padding: 11px 0 10px;
+}
+
+.text-desc a,
+.text-desc p{
+    font: 13px/20px "Open Sans", Arial, sans-serif;
+    color: #171717;
+    margin-top: 2px;
+}
+
+.text-desc a{
+    transition: all 0.2s ease-in-out;
+}
+
+.text-desc:hover a{
+    color: #fe7676;
+}
+
+/* Repon for table */
+@media (min-width:740px) and (max-width:1023px){
+    .desc-content img{
+        width: 100%;
+    }
+    .image{
+        width: 100%;
+        height: 100%;
+        transition: 0.7s;
+    }
+    
+    .image:hover{
+        transform: scale(1.05);
+      }
+
+      .desc-content .div-info-author{
+        top: -195px;
+    }
+
+    .image-tb:hover{
+        transform: scale(1.2);
+      }
+}
+
+/* Repon for mobile */
+@media (min-width: 569px) and (max-width:739px){
+    /* CSS for main overflow */
+    #main{
+        overflow-x: hidden;
+    }
+
+    /* CSS for Header */
+    .content-header h1 a{
+        font-size:59px;
+    }
+
+    /* CSS for slider */
+    .slier-item img{
+        /* margin-left: -43px;
+        margin: 0 auto; */
+    } 
+
+    /* CSS for menu */
+    .menu1{
+        display: inline-block!important;
+        position: relative;
+    }
+    #menu{
+        background-color: #fff;
+        width: 100vw;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        display: none;
+        transition: all 0.2s linear;
+    }
+    #menu .menu1 .menu2{
+        position: absolute;
+        right: -77px;
+        top: -5px;
+    }
+
+    #menu .menu1 .menu2 .menu3{
+        position: absolute;
+        right:-131px;
+        top:60px;
+    }
+    .menu3,
+    .menu2{
+        opacity: 1;
+    }
+
+    /* CSS for btn */
+    .btn-taskbar-mobile{
+        padding:10px;
+        top: 302px;
+        right: 0;
+        position: absolute;
+        display: inline-block;
+    }
+
+    /* CSS for slider */
+    .background-silder {
+        top: 0;
+    }
+
+    /* CSS for content */
+    .first-content{
+        margin-top:60px;
+    }
+    .desc-content img{
+        text-align: center;
+        width: 100%;
+        height: auto;
+    }
+    .desc-content p{
+        margin-top:60px;
+    }
+
+    .desc-content{
+        overflow: hidden;
+    }
+
+    .desc-content .div-info-author{
+        top: -242px;
+    }
+
+    /* CSS for footer-item */
+    .item-footer{
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .item-footer a i{
+        font-size:25px;
+    }
+}
+
+@media (max-width: 568px){
+    /* CSS for main overflow */
+    #main{
+        overflow-x: hidden;
+    }
+
+    /* CSS for Header */
+    .content-header h1 a{
+        font-size:59px;
+    }
+
+    /* CSS for slider */
+    .slier-item img{
+        margin-left: -43px;
+        margin: 0 auto;
+    } 
+
+    /* CSS for menu */
+    .menu1{
+        display: inline-block!important;
+        position: relative;
+    }
+    #menu{
+        background-color: #fff;
+        width: 100vw;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        display: none;
+        transition: all 0.2s linear;
+    }
+    #menu .menu1 .menu2{
+        position: absolute;
+        right: -77px;
+        top: -5px;
+    }
+
+    #menu .menu1 .menu2 .menu3{
+        position: absolute;
+        right:-131px;
+        top:60px;
+    }
+    .menu3,
+    .menu2{
+        opacity: 1;
+    }
+
+    /* CSS for btn */
+    .btn-taskbar-mobile{
+        padding:10px;
+        top: 302px;
+        right: 0;
+        position: absolute;
+        display: inline-block;
+    }
+
+    /* CSS for slider */
+    .background-silder {
+        top: 0;
+    }
+
+    /* CSS for content */
+    .first-content{
+        margin-top:60px;
+    }
+    .desc-content img{
+        text-align: center;
+        width: 100%;
+        height: auto;
+    }
+    .desc-content p{
+        margin-top:60px;
+    }
+
+    .desc-content{
+        overflow: hidden;
+    }
+
+    .desc-content .div-info-author{
+        top: -242px;
+    }
+
+    /* CSS for footer-item */
+    .item-footer{
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+    }
+    .item-footer a i{
+        font-size:25px;
+    }
+}

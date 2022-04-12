@@ -5,33 +5,6 @@
     box-sizing: border-box;
 }
 
-a{
-    text-decoration: none;
-    font-size:16px ;
-}
-
-html{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-ul,li{
-    list-style: none;
-}
-
-body{
-    overflow-x: hidden;
-    background: #f1f0f0;
-}
-.image{
-    width: 100%;
-    height: 100%;
-    transition: 0.7s;
-}
-.image:hover{
-    transform: scale(1.2);
-}
-
-
 :-moz-selection { /* Code for Firefox */
     color: #fe7676;
     background: #ddd;
@@ -58,6 +31,147 @@ body{
 ::-webkit-scrollbar-thumb:hover {
     background: #fff; 
 }  
+
+a{
+    text-decoration: none;
+    font-size:16px ;
+}
+
+html{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ul,li{
+    list-style: none;
+}
+
+.clear{
+    clear: both;
+}
+
+body{
+    overflow-x: hidden;
+    background: #f1f0f0;
+}
+
+.image{
+    width: 100%;
+    height: 100%;
+    transition: 0.7s;
+    overflow: hidden;
+}
+
+.image:hover{
+    transform: scale(1.2);
+}
+
+/* CSS for loading */
+/* .loading{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.3);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s linear;
+}
+
+.loader {
+    background: #000;
+    background: radial-gradient(#222, #000);
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 99999;
+}
+
+.loader-inner {
+    bottom: 0;
+    height: 60px;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+}
+
+.loader-line-wrap {
+    animation: 
+    spin 2000ms cubic-bezier(.175, .885, .32, 1.275) infinite
+  ;
+    box-sizing: border-box;
+    height: 50px;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    transform-origin: 50% 100%;
+    width: 100px;
+}
+.loader-line {
+    border: 4px solid transparent;
+    border-radius: 100%;
+    box-sizing: border-box;
+    height: 100px;
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+}
+.loader-line-wrap:nth-child(1) { animation-delay: -50ms; }
+.loader-line-wrap:nth-child(2) { animation-delay: -100ms; }
+.loader-line-wrap:nth-child(3) { animation-delay: -150ms; }
+.loader-line-wrap:nth-child(4) { animation-delay: -200ms; }
+.loader-line-wrap:nth-child(5) { animation-delay: -250ms; }
+
+.loader-line-wrap:nth-child(1) .loader-line {
+    border-color: hsl(0, 80%, 60%);
+    height: 90px;
+    width: 90px;
+    top: 7px;
+}
+.loader-line-wrap:nth-child(2) .loader-line {
+    border-color: hsl(60, 80%, 60%);
+    height: 76px;
+    width: 76px;
+    top: 14px;
+}
+.loader-line-wrap:nth-child(3) .loader-line {
+    border-color: hsl(120, 80%, 60%);
+    height: 62px;
+    width: 62px;
+    top: 21px;
+}
+.loader-line-wrap:nth-child(4) .loader-line {
+    border-color: hsl(180, 80%, 60%);
+    height: 48px;
+    width: 48px;
+    top: 28px;
+}
+.loader-line-wrap:nth-child(5) .loader-line {
+    border-color: hsl(240, 80%, 60%);
+    height: 34px;
+    width: 34px;
+    top: 35px;
+}
+
+@keyframes spin {
+    0%, 15% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} */
 
 .fade-in {
     opacity: 0;
@@ -118,23 +232,63 @@ body{
     justify-content: center;
     align-items: center;
 }
+
 .content-header h1 a{
-    font-size: 76px;
-    font-weight: 400;
+    font-size:76px;
+    font-weight:400;
 }
 
-.content-header a,
-.content-header p{
-    color: white;
+.content-header p,
+.content-header a{
+    color:white;
     font-style: italic;
 }
 
 .content-header p{
-    font-size: 14px;
+    font-size:14px;
 }
 
 .content-header a{
-    transition: all 0.2 ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.content-header a:hover{
+    color: #ccc;
+}
+
+/* CSS for header */
+#header{
+    width: 100%;
+    height: 295px;
+    background-color: #fe7676;
+    overflow: hidden;
+}
+
+.content-header{
+    text-align: center;
+    height: 265px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-header h1 a{
+    font-size:76px;
+    font-weight:400;
+}
+
+.content-header p,
+.content-header a{
+    color:white;
+    font-style: italic;
+}
+
+.content-header p{
+    font-size:14px;
+}
+
+.content-header a{
+    transition: all 0.2s ease-in-out;
 }
 
 .content-header a:hover{
@@ -142,7 +296,6 @@ body{
 }
 
 /* CSS for nav */
-
 
 #nav{
     background: #fff;
@@ -237,24 +390,26 @@ body{
 }
 
 /* CSS for content */
-#content{
-    background-color: #f1f0f0;
-    top: -96px;
+#content {
     position: relative;
+    top: -96px;
+    background-color: #f1f0f0;
 }
 /* CSS for left-row */
 .left-row-content{
-    margin-top: 65px;
+    margin-top:65px;
 }
+
 .left-row-content h3{
+    font: 24px/30px 'Open Sans', Arial, sans-serif;
     color: #5f5f5f;
     text-transform: uppercase;
-    font: 24px/30px 'Open Sans', Arial, sans-serif;
-
 }
+
 .left-row-content .btn-left-content{
     margin-top:46px;
 }
+
 .left-row-content .header-left-content{
     font: 18px/30px 'Open Sans', Arial, sans-serif;
     color: #6f6f6f;
@@ -269,28 +424,31 @@ body{
     font-size:20px;
     color: #fe7676; 
 }
+
 .left-row-content .second-btn:hover{
     color: #000;
 }
 
-
-/* CSS for Blog */
+/* CSS for 1 -2-3 blog */
 .blog-page,
 .blog-img{
     margin-top: 18px;
     overflow: hidden;
 }
+
 .blog-img img{
     width: 100%;
     height: auto;
 }
+
 .blog-page p{
     font: 14px/21px Arial, Helvetica, sans-serif;
     color: #777675;
     margin-top:13px;
     font-style: justify;
 }
-.blog-page-btn{
+
+.blog-page-btn {
     display: inline-block;
     color: #fff;
     background: #fe7676;
@@ -298,119 +456,148 @@ body{
     margin-top: 18px;
     text-transform: uppercase;
     padding: 7px 24px 5px;
-    border-radius: 5px;
     transition: all 0.2s ease-in-out;
-
+    border-radius: 5px;
 }
+
 .blog-page-btn:hover{
     color: #fe7676;
     background-color: #000;
 }
+
 /* CSS for right-row */
 .right-row-content{
     margin-top: 65px;
 }
+
 .right-row-content h3{
     font: 24px/30px 'Open Sans', Arial, sans-serif;
     color: #5f5f5f;
     text-transform: uppercase;
 }
+
 .list-categories {
     margin-top: 48px;
     font: 12px/18px Arial, Helvetica, sans-serif;
 }
+
 .list-categories li{
-    /* display: block; */
+    display: block;
     padding-left: 17px;
     margin-bottom: 12px;
     background: url(../img/list_marker.png) 1px 5px no-repeat;
 }
+
 .list-categories li a{
-    /* display: inline-block;  */
+    display: inline-block; 
     color: #777675;
     font: 12px/16px Arial, sans-serif;
     transition: all 0.3s ease;
 }
+
 .list-categories li a:hover{
     color: #dd745c;
 }
-
-
 
 /* CSS for search blog */
 .search-blog{
     margin-top: 51px;
 }
+
 .input-search{
     margin-top: 30px;
 }
+
 .input-search input{
     width: 100%;
     float: left;
     color: #b3b1af;
     font: 13px/20px Arial, Helvetica, sans-serif;
     height: 32px;
+    box-sizing: border-box;
     border: 1px solid #d9d9d9;
     padding: 5px 5px 5px 14px;
-
 }
 
 .input-search a{
-    background: url(../img/zoom_icon.png) top no-repeat;
     position: relative;
     display: inline-block;
     width: 24px;
     height: 20px;
-    margin-left: -35px;
-    margin-top: 7px;
+    /* Luc dau anh o tren */
+    background: url(../img/zoom_icon.png);
+     margin-left: -35px;
+    margin-top: 7px; 
     cursor: pointer;
-    transition: all 0.3s ease;
+    color: #000;
+    transition: all 0.3s ease; 
 }
 
-.more-btn2:hover {
+.more_btn2:hover {
+    /* Hover vao thi anh o duoi */
     background: url(../img/zoom_icon.png) bottom no-repeat;
-}
+} 
 
+a:hover {
+    color: #000;
+} 
 
 /* CSS for Recent-posts */
-.recent-posts{
+.recent-posts {
     margin-top: 65px;
 }
+
 .card-recent-posts{
     margin-top:38px;
     display:flex;
     overflow: hidden;
 }
+
+
 .card-recent-posts img{
     width: 100%;
     height: auto;
 }
+
 .card-recent-posts a{
     color: #6f6f6f; 
     font: 20px/21px Arial, Helvetica, sans-serif;
+    transition: all 0.2s ease;
 }
+
 .card-recent-posts p{
     font: 16px/21px Arial, Helvetica, sans-serif;
     color: #777675;
 }
+
 .btn-recent-posts {
     margin: 4px 0;
 }
+
 .card-recent-posts a:hover{
     color: #fe7676;
 }
-/* CSS for footer */
-#footer{
-    background-color: #fe7676;
 
+/* CSS for footer */
+#footer {
+    background-color: #fe7676!important;
 }
+
 .header-text-footer{
     padding-top: 44px;
-
+    /* padding-bottom: 70px; */
 }
+
 .body-text-footer {
     text-align: center;
 }
+
+.body-text-footer p{
+    font: 18px/30px "Open Sans", Arial, sans-serif;
+    color: #fff;
+    margin-top: 24px;
+}
+
 .header-text-footer p{
     text-align: center;
     font: 24px/24px "Open Sans", Arial, sans-serif;
@@ -418,27 +605,26 @@ body{
     margin-top: 10px;
     text-transform: uppercase;
 }
-.body-text-footer p{
-    font: 18px/30px "Open Sans", Arial, sans-serif;
-    color: #fff;
-    margin-top: 24px;
-}
+
 .item-footer {
     text-align: center;
     margin-top: 40px;
     padding-bottom: 44px;
 }
+
 .item-footer a i{
     color: #fff;
     font-size: 40px;
     margin:0 20px;
     transition: all 0.2s ease-in-out;
 }
+
 .item-footer a:hover i{
     color: #482222;
 }
-/* CSS for footer-desc */
 
+
+/* CSS for footer-desc */
 .text-desc {
     text-align: center;
     padding: 11px 0 10px;
@@ -458,7 +644,6 @@ body{
 .text-desc:hover a{
     color: #fe7676;
 }
-/* Responsive */
 
 /* Repon for table */
 @media (min-width:740px) and (max-width:1023px){
@@ -511,6 +696,10 @@ body{
         display: inline-block;
     }
 
+    /* CSS for slider */
+    /* .background-silder {
+        top: 0;
+    } */
 
     /* CSS for content */
     #content {
@@ -528,11 +717,10 @@ body{
     .desc-content p{
         margin-top:60px;
     }
-    .left-row-content,
-    .right-row-content{
-        margin-left: 10px;
-        margin-right: 10px;
-    }
+
+    /* .image:hover{
+        transform: scale(1.1);
+    } */
     .card-recent-posts img{
         width: 100vw;
     }
