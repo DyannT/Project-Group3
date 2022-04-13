@@ -130,6 +130,9 @@ closebtn1.onclick = function () {
 // $("#title_hello").html(`Tôi là ${localStorage.getItem("nameUser")}`)
 
 var isRegister = false;
+var code = '205106';
+
+// console.log(checkCode === parseInt(code))
 
 createAcc.onclick = function (e) {
   // Cách 1 lưu qua data tạm thời khi refresh sẽ mất
@@ -157,15 +160,18 @@ createAcc.onclick = function (e) {
 
   var userInput = $(".create-user-form").val();
   var pwdInput = $(".create-password-form").val();
+  var checkCode = $(".code-create").val();
+
 
   var user1 = new createData(userInput,pwdInput)
   // console.log(user1)
-  if(checkCreate(user1.username,user1.password) && user1.username !== '' && user1.password !== ''){
-    isRegister = true;
-    data.push(user1);
-    localStorage.setItem("username",userInput);
-    localStorage.setItem("password",pwdInput);
-    actionCreate(e)
+  if(checkCreate(user1.username,user1.password) && user1.username !== '' && user1.password !== '' && checkCode === code){
+      isRegister = true;
+      data.push(user1);
+      localStorage.setItem("username",userInput);
+      localStorage.setItem("password",pwdInput);
+      // e.preventDefault()
+      actionCreate(e)
   }
 
   else if(user1.username === '' && user1.password === ''){
@@ -173,7 +179,7 @@ createAcc.onclick = function (e) {
   }
 
   else{
-    alert("Tài khoản hoặc mật khẩu bị trùng")
+    alert("Tài khoản hoặc mật khẩu bị trùng hoặc là sai mã code")
     e.preventDefault()
   }
 

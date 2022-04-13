@@ -370,9 +370,9 @@ button.btn-change {
     .people-see{
         width: 250px;
     }
-    .back{
+    /* .back{
         line-height: 121px;
-    }
+    } */
 }
 
 @media (max-width:739px){
