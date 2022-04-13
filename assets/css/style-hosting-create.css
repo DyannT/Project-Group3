@@ -244,6 +244,8 @@ html{
     position: absolute;
 }
 
+
+
 #content{
     position: absolute;
     top: 0;
@@ -309,7 +311,7 @@ html{
         width: 250px;
     }
     .back{
-        line-height: 121px;
+        /* line-height: 121px; */
     }
 }
 

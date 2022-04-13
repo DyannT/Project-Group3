@@ -277,13 +277,13 @@ button.btn-change {
     text-align: center;
 }
 
-.back{
+/* .back{
     padding: 7px 10px;
     border: none;
     cursor: pointer;
     background: #fe7676;
     transition: all 0.2s ease-in-out;
-}
+} */
 
 .back:hover{
     color: #fe7676;
@@ -314,6 +314,25 @@ button.btn-change {
 
 .content {
     text-align: center;
+}
+
+.back{
+    width: fit-content;
+    /* text-align: center; */
+    margin: 0 auto; 
+}
+
+.back-input{
+    padding: 7px 10px;
+    border: none;
+    cursor: pointer;
+    background: #fe7676;
+    transition: all 0.2s ease-in-out;
+}
+
+.back-input:hover{
+    color: #fe7676;
+    background: #000;
 }
 
 .people-see1,

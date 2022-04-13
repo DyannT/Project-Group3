@@ -1,23 +1,9 @@
 // logout
-function logoutCreate() {
-    // localStorage.removeItem("tokenCreate")
-    window.location.replace(`file:///D:/Project-Group3/login.html`)
-} 
-function logout1() {
-    // localStorage.removeItem("token1")
-    window.location.replace(`file:///D:/Project-Group3/login.html`)
-} 
-
-function logout2() {
-    // localStorage.removeItem("token2")
-    window.location.replace(`file:///D:/Project-Group3/login.html`)
-} 
-
-function logout3() {
-    // localStorage.removeItem("token3")
-    window.location.replace(`file:///D:/Project-Group3/login.html`)
-} 
-
+const backbtn = document.querySelector('.back-input')
+backbtn.onclick = function () {
+	history.back()
+  };
+  
 
 
 const meNu = document.querySelector('.btn-menu')
