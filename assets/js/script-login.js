@@ -116,8 +116,14 @@ closebtn1.onclick = function () {
 //     console.log("Đăng nhập thành công!!")
 // }
 
+var arr1 = [];
+var arr2 = [];
 
-
+// Moi khi load trang
+window.onload  = function() {
+  localStorage.setItem("username",JSON.stringify(arr1));
+  localStorage.setItem("password",JSON.stringify(arr2));
+}
 
 
 
@@ -164,7 +170,7 @@ createAcc.onclick = function (e) {
 
   // console.log(storageUsernameCheck)
   var user1 = new createData(userInput,pwdInput)
-  
+
   
   if(checkCreate(userInput,pwdInput,storageUsernameCheck,storagePasswordCheck) && user1.username !== '' && user1.password !== '' && checkCode === code){
     // Day vao arr de test
