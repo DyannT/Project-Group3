@@ -131,6 +131,10 @@ closebtn1.onclick = function () {
 
 var isRegister = false;
 var code = '205106';
+storageUsername = []
+storagePassword = []
+storageUsernameCheck = []
+storagePasswordCheck = []
 
 // console.log(checkCode === parseInt(code))
 
@@ -162,20 +166,32 @@ createAcc.onclick = function (e) {
   var pwdInput = $(".create-password-form").val();
   var checkCode = $(".code-create").val();
 
-
+  // console.log(storageUsernameCheck)
   var user1 = new createData(userInput,pwdInput)
-  // console.log(user1)
-  if(checkCreate(user1.username,user1.password) && user1.username !== '' && user1.password !== '' && checkCode === code){
+  
+  
+  if(checkCreate(userInput,pwdInput,storageUsernameCheck,storagePasswordCheck) && user1.username !== '' && user1.password !== '' && checkCode === code){
+    // Day vao arr de test
+    storageUsernameCheck.push(userInput)
+    storagePasswordCheck.push(pwdInput)
+    
+    // Day vao arr(Thanh stringify nen khong gop dc)
+    storageUsername.push(userInput)
+    storagePassword.push(pwdInput)
+    // Bien thanh chuoi JSON
+    var new_dataU = JSON.stringify(storageUsername)
+    var new_dataP = JSON.stringify(storagePassword)
+
+    // Day len local
+    localStorage.setItem("username",new_dataU);
+    localStorage.setItem("password",new_dataP);
       isRegister = true;
-      data.push(user1);
-      localStorage.setItem("username",userInput);
-      localStorage.setItem("password",pwdInput);
-      // e.preventDefault()
       actionCreate(e)
   }
 
   else if(user1.username === '' && user1.password === ''){
     alert('Điền tài khoản hoặc mật khẩu trước khi đăng ký')
+    e.preventDefault()
   }
 
   else{
@@ -185,7 +201,7 @@ createAcc.onclick = function (e) {
 
 }
 
-function checkCreate(username,password){
+function checkCreate(username,password,storageUsernameCheck,storagePasswordCheck){
   for(var i=0;i<data.length;i++){
     if(data[i].username === username && data[i].password === password){
         // alert("Tk or mk bi trung")
@@ -194,6 +210,9 @@ function checkCreate(username,password){
     else{
       continue;
     }
+  }
+  if(storageUsernameCheck.includes(username) && storagePasswordCheck.includes(password)){
+    return false;
   }
   return true;
 }
@@ -216,9 +235,6 @@ function actionCreate(e){
   // }
 }
 
-
-var localU = localStorage.getItem("username",$(".create-user-form").val())
-var localP = localStorage.getItem("password",$(".create-password-form").val())
 
 
 
@@ -244,9 +260,20 @@ loginAdmin.onclick = function (e) {
   // console.log(user1.username)
   var password = passWord.value;
   var username = userName.value;
-//   loggedIn = login(password);
-//   loggedIn = login(username);
-  if(checkLogin(username,password)){
+
+  // Lay arr o local
+  var localU = localStorage.getItem("username")
+  var localP = localStorage.getItem("password")
+
+  // Parse no ra
+  var listUNKey = JSON.parse(localU)
+  var listPWKey = JSON.parse(localP)
+
+  // Chuyen
+  const listUNVal = Object.values(listUNKey);
+  const listPWVal = Object.values(listPWKey );
+
+  if(checkLogin(username,password,listUNVal,listPWVal)){
     if(token === 0){
       loggedIn = true;
     }
@@ -264,7 +291,7 @@ loginAdmin.onclick = function (e) {
   check(e);
 }
 
-function checkLogin(username,password) {
+function checkLogin(username,password,listUNVal,listPWVal) {
   for(var i=0; i< (data).length; i++) {
     // console.log((data.concat(data1))[i].username)
       if((data).hasOwnProperty(i)){
@@ -272,14 +299,14 @@ function checkLogin(username,password) {
               token = i;
               return true;
           }
-          else if(username === localU && password === localP){
-            return true;
-          }
           else{
               continue;
           }
       }
   }
+  if(listUNVal.includes(username) && listPWVal.includes(password)){{
+    return true
+  }}
   return false
 }
 
@@ -306,8 +333,6 @@ function check(e) {
 
   else {
     alert('Sai tài khoản hoặc mật khẩu!!!');
-    console.log(loggedCreate)
-    console.log(isRegister)
     e.preventDefault()
 }}
 
