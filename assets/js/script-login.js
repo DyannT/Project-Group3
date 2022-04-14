@@ -116,14 +116,6 @@ closebtn1.onclick = function () {
 //     console.log("Đăng nhập thành công!!")
 // }
 
-var arr1 = [];
-var arr2 = [];
-
-// Moi khi load trang
-window.onload  = function() {
-  localStorage.setItem("username",JSON.stringify(arr1));
-  localStorage.setItem("password",JSON.stringify(arr2));
-}
 
 
 
@@ -137,7 +129,10 @@ window.onload  = function() {
 
 var isRegister = false;
 var code = '205106';
-
+storageUsername = []
+storagePassword = []
+storageUsernameCheck = []
+storagePasswordCheck = []
 // console.log(checkCode === parseInt(code))
 
 createAcc.onclick = function (e) {
@@ -241,7 +236,17 @@ function actionCreate(e){
 
 
 
+var arr1 = [];
+var arr2 = [];
 
+// Moi khi load trang
+window.onload  = function() {
+  if (!(localStorage.getItem("username") == true || localStorage.getItem("password") == false)) {
+    // console.log('ok')
+    localStorage.setItem("username",JSON.stringify(arr1));
+    localStorage.setItem("password",JSON.stringify(arr2));
+  };
+}
 
 
 
