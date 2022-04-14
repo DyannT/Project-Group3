@@ -178,13 +178,13 @@ var loggedIn = false;
 var loggedIn1 = false;
 var loggedIn2 = false;
 
-var token
+var token = 5;
 
 loginAdmin.onclick = function (e) {
   // e.preventDefault();
   // console.log(user1.username)
-  var password = passWord.value;
-  var username = userName.value;
+  var passwordI = passWord.value;
+  var usernameI = userName.value;
 
   // Lay arr o local
   var localU = localStorage.getItem("username")
@@ -198,22 +198,26 @@ loginAdmin.onclick = function (e) {
   const listUNVal = Object.values(listUNKey);
   const listPWVal = Object.values(listPWKey );
 
-  if(checkLogin(username,password,listUNVal,listPWVal)){
+  if(checkLogin(usernameI,passwordI,listUNVal,listPWVal)){
+    console.log(token)
     if(token === 0){
       loggedIn = true;
+      e.preventDefault();
+      check(e);
     }
     else if(token === 1){
       loggedIn1 = true;
+      check(e);
     }
     else if(token === 2){
       loggedIn2 = true;
+      check(e);
     }
-    else{
-      isRegister = true;
-      loggedCreate = true}
+      loggedCreate = true;
+      check(e); 
   }
   // console.log(e)
-  check(e);
+  // check(e);
 }
 
 function checkLogin(username,password,listUNVal,listPWVal) {
@@ -236,7 +240,7 @@ function checkLogin(username,password,listUNVal,listPWVal) {
 }
 
 function check(e) {
-  if(isRegister && loggedCreate){
+  if(loggedCreate){
     alert('Đăng nhập thành công!!');
     formLogin.action = 'hosting-create.html'
   }
